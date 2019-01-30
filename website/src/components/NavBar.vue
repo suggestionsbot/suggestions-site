@@ -14,20 +14,27 @@
       </div>
 
       <div id="navbarBasicExample" class="navbar-menu" :class="{ 'is-active': showNav }">
-        
+
         <div class="navbar-start" v-for="(link, index) in mainLinks" :key="index">
-          <a :href=link.link class="navbar-item">{{ link.name }}</a>
+          <a :href=link.link class="navbar-item"><strong>{{ link.name }}</strong></a>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link"><strong>More</strong></a>
+          <div class="navbar-dropdown">
+            <div v-for="(link, index) in moreLinks" :key="index">
+              <a :href=link.link class="navbar-item">{{ link.name }}</a>
+            </div>
+          </div>
         </div>
 
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
               <a class="button is-primary">
-                <strong>Sign up</strong>
+                <i class="fab fa-discord"></i> Login
               </a>
-              <a class="button is-light">
-                Log in
-              </a>
+              <a class="button is-light">Profile</a>
             </div>
           </div>
         </div>
@@ -50,6 +57,11 @@ export default {
               { name: 'Documentation', link: 'https://docs.suggestionsbot.com'},
               { name: 'Discord', link: 'https://discord.gg/g7wr8xb' },
               { name: 'Patreon', link: 'https://patreon.com/acollierr17'},
+            ],
+            moreLinks: [
+              { name: 'Terms of Service', link: '/terms' },
+              { name: 'Privacy Policy', link: '/privacy' },
+              { name: 'Contact', link: '/contact' }
             ]
         };
     },
@@ -57,5 +69,11 @@ export default {
 </script>
 
 <style scoped>
+.navbar-start {
+  margin-right: inherit;
+}
 
+i {
+    padding-right: 5px;
+}
 </style>

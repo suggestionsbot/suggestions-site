@@ -6,9 +6,7 @@
     <router-view />
 
     <Footer />
-    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
-  </div>
+   </div>
 </template>
 
 <script>
@@ -16,29 +14,31 @@ import NavBar from './components/NavBar.vue';
 import Footer from './components/Footer.vue';
 
 export default {
-  name: 'app',
+  name: 'App',
+  metaInfo: function() {
+    return {
+      title: 'Suggestions',
+      titleTemplate: '%s / Suggestions',
+      meta: [
+        { name: 'theme-color', content: '#dd9323' },
+        { property: 'og:image', content: '/public/logo.png' }
+      ],
+      link: [
+        { rel: 'stylesheet', href: 'https://jenil.github.io/bulmaswatch/darkly/bulmaswatch.min.css' },
+        { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.2.0/css/all.css' },
+        { rel: 'stylesheet', href: 'https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css' }
+      ]
+    }
+  },
   components: {
     NavBar,
     Footer
-  },
-  data: function() {
-    return {
-      
-    };
-  },
-  computed: {
-    
   },
 };
 </script>
 
 <style>
-/* #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-} */
+/* @import "~bulma/sass/utilities/_all";
+
+$primary: #dd9323; */
 </style>

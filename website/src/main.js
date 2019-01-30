@@ -2,25 +2,16 @@ import Vue from 'vue';
 import App from './App.vue';
 import Buefy from 'buefy';
 import VueRouter from 'vue-router';
+import Meta from 'vue-meta';
 import 'buefy/dist/buefy.css';
 
-// import routes
-import Home from './components/Home.vue';
-import About from './components/About.vue';
+import router from './router';
 
 Vue.config.productionTip = false;
 
 Vue.use(VueRouter);
 Vue.use(Buefy);
-
-const router = new VueRouter({
-  mode: 'history',
-  base: __dirname,
-  routes: [
-    { path: '/', name: 'home', component: Home },
-    { path: '/about', name: 'about', component: About },
-  ]
-});
+Vue.use(Meta);
 
 new Vue({
   router,

@@ -2,9 +2,7 @@
     <div>
         <footer class="footer">
             <div class="content has-text-centered">
-                <p>
-                    <strong><a :href=footerText.url>{{ footerText.name }}</a></strong>
-                </p>
+                <p v-html="combinedLinks"></p>
             </div>
         </footer>
     </div>
@@ -14,11 +12,22 @@
 export default {
     data: function() {
         return {
-            footerText: {
-                name: '© 2019 Nerd Cave Development',
-                url: 'https://thenerdcave.us'
-            }
+            links: [
+                { name: '© 2019 Nerd Cave Development', url: 'https://thenerdcave.us' },
+                { name: 'Privacy Policy', url: '/privacy' },
+                { name: 'Terms of Service', url: '/terms' },
+                { name: 'Contact', url: '/contact' }
+            ]
         };
+    },
+    computed: {
+        combinedLinks: function() {
+            let links = this.links.map(link => {
+                return `<a href="${link.url}">${link.name}</a>`;
+            });
+
+            return links.join(' | ');
+        }
     }
 }
 </script>
