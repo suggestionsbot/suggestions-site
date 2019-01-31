@@ -27,7 +27,7 @@ export default {
             <br />
             <p>The Suggestions bot is created with the purpose of having an easy to use, but powerful tool and user experience designed for all. It&#39;s meant to be one of the essentials bots one could need in their Discord server.</p>
             <br />
-            <p>The bot started out with the idea to solve a simple problem. In a Discord server where a suggestions channel existed and people constantly suggesting ideas, there was a problem. Lack of organization and managing new ideas. No way to keep track of what is or isn&#39;t an idea because anyone could submit a message or add reactions. With the need for a solution, the Suggestions bot came to be in early August of 2018.</p>
+            <p>The bot started out with the idea to solve a simple problem. In a Discord server where a suggestions channel existed and people constantly suggesting ideas, there was a problem. Lack of organization and managing new ideas. No way to keep track of what is or isn&#39;t an idea because anyone could submit a message or add reactions. With a solution in mind, the Suggestions bot came to be in early August of 2018.</p>
             <br />
             <p>Whether you are a YouTuber, e-Sports Team Owner, an owner of a game server, or someone who wants to have friends suggest new ideas in your new guild, this bot <em>will</em> and is <em>meant</em> to meet the needs of your Discord.</p>
             <br />

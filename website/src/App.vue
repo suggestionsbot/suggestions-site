@@ -24,7 +24,7 @@ export default {
         { property: 'og:image', content: '/public/logo.png' }
       ],
       link: [
-        { rel: 'stylesheet', href: 'https://jenil.github.io/bulmaswatch/darkly/bulmaswatch.min.css' },
+        // { rel: 'stylesheet', href: 'https://jenil.github.io/bulmaswatch/darkly/bulmaswatch.min.css' },
         { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.2.0/css/all.css' },
         { rel: 'stylesheet', href: 'https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css' }
       ]
@@ -37,8 +37,17 @@ export default {
 };
 </script>
 
-<style>
-/* @import "~bulma/sass/utilities/_all";
+<style lang="scss">
+$primary: #dd9323;
 
-$primary: #dd9323; */
+@import '~bulma/bulma.sass';
+
+.is-primary {
+  background-color: $primary !important;
+}
+
+a {
+  color: $primary;
+}
+
 </style>

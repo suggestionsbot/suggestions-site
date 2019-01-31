@@ -2,7 +2,7 @@
   <div>
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
+        <a class="navbar-item" href="/">
           <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
         </a>
 
@@ -31,10 +31,9 @@
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
-              <a class="button is-primary">
+              <a class="button is-primary" disabled>
                 <i class="fab fa-discord"></i> Login
               </a>
-              <a class="button is-light">Profile</a>
             </div>
           </div>
         </div>
@@ -53,10 +52,11 @@ export default {
             mainLinks: [
               { name: 'Home', link: '/' },
               { name: 'About', link: '/about'},
-              { name: 'Panel', link: '/' },
+              // { name: 'Panel', link: '/' },
               { name: 'Documentation', link: 'https://docs.suggestionsbot.com'},
               { name: 'Discord', link: 'https://discord.gg/g7wr8xb' },
               { name: 'Patreon', link: 'https://patreon.com/acollierr17'},
+              { name: 'Partners', link: '/partners'},
             ],
             moreLinks: [
               { name: 'Terms of Service', link: '/terms' },

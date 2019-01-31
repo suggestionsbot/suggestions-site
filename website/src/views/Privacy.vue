@@ -3,7 +3,7 @@
         <section class="section">
             <div class="container">
                 <h1 class="title">{{ privacyTitle }}</h1>
-                <h2 class="subtitle" v-html="privacyText"></h2>
+                <h2 class="subtitle privacyText" v-html="privacyText"></h2>
             </div>
         </section>
     </div>
@@ -77,6 +77,16 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
+$primary: #dd9323;
 
+@import '~bulma/bulma.sass';
+
+.centerContact {
+    padding: 30px;
+}
+
+a {
+    color: $primary;
+}
 </style>

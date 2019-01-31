@@ -40,10 +40,6 @@ export default {
     data: function() {
         return {
             contactTitle: 'Contact us',
-            contactInformation: `
-            <br />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, aspernatur!</p>
-            `,
             supportDiscord: 'https://discord.gg/g7wr8xb ',
             inquiryEmail: 'contact@thenerdcave.us',
             inquiryEmailLink: 'mailto:contact@thenerdcave.us'
@@ -52,8 +48,16 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+$primary: #dd9323;
+
+@import '~bulma/bulma.sass';
+
 .centerContact {
     padding: 30px;
+}
+
+a {
+    color: $primary;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div>
         <footer class="footer">
-            <div class="content has-text-centered">
+            <div class="content has-text-centered footerLinks">
                 <p v-html="combinedLinks"></p>
             </div>
         </footer>
@@ -32,6 +32,14 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
+$primary: #dd9323;
 
+@import '~bulma/bulma.sass';
+
+.footerLinks {
+    a {
+        color: $primary;
+    }
+}
 </style>
