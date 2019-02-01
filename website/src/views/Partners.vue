@@ -49,30 +49,33 @@ export default {
             partnersTitle: 'Partners',
             partnersInformation: `
             <br />
-            <p>Check out our partners of the Suggestions bot and Nerd Cave Dvelopment!</p>
+            <p>Check out our partners of the Suggestions bot and Nerd Cave Development!</p>
+            <br />
+            <p>Want to become a partner? Join our <a href="${this.supportDiscord}">Support Discord</a> today and speak with <strong>anthony#8577</strong> for partnership inquiries.</p>
             `,
+            supportDiscord: 'https://discord.gg/g7wr8xb',
             partners: [
                 { 
                     partner: 'Partner 1', 
                     partnerMention: 'partner1', 
-                    description: 'Partner 1 description', 
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, omnis eum dolorem iusto nesciunt ipsa!', 
                     link: 'a link here',
-                    dateAdded: 'a date here' 
+                    dateAdded: new Date().toString() 
                 },
                 { 
                     partner: 'Partner 2', 
                     partnerMention: 'partner2', 
-                    description: 'Partner 2 description', 
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, omnis eum dolorem iusto nesciunt ipsa!', 
                     link: 'a link here',
-                    dateAdded: 'a date here', 
+                    dateAdded: new Date().toString() 
                     
                 },
                 { 
                     partner: 'Partner 3', 
                     partnerMention: 'partner3', 
-                    description: 'Partner 3 description', 
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, omnis eum dolorem iusto nesciunt ipsa!', 
                     link: 'a link here',
-                    dateAdded: 'a date here', 
+                    dateAdded: new Date().toString() 
                 },
             ]
         }
@@ -80,7 +83,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 $primary: #dd9323;
 
 @import '~bulma/bulma.sass';

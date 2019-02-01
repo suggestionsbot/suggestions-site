@@ -86,7 +86,9 @@ $primary: #dd9323;
     padding: 30px;
 }
 
-a {
-    color: $primary;
+.privacyText {
+    a {
+        color: $primary;
+    }
 }
 </style>

@@ -37,6 +37,10 @@ $primary: #dd9323;
 
 @import '~bulma/bulma.sass';
 
+.footer {
+    background-color: inherit !important;
+}
+
 .footerLinks {
     a {
         color: $primary;
