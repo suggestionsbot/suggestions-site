@@ -10,9 +10,11 @@
   "dependencies": {
     "babel-runtime": "^6.26.0",
     "vue": "^2.5.21",
+    "vue-bulma-modal": "^2.0.0-alpha.2",
     "vue-markdown": "^2.2.4",
     "vue-meta": "^1.5.8",
-    "vue-router": "^3.0.2"
+    "vue-router": "^3.0.2",
+    "vue-youtube-embed": "^2.2.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.3.0",
