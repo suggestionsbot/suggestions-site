@@ -73,10 +73,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$modal-z: 100 !important;
-
-@import '~bulma/bulma.sass';
-
 #homeContainer {
     text-align: center;
     margin-top: 60px;
