@@ -39,6 +39,7 @@ export default {
 
 <style lang="scss">
 $primary: #dd9323;
+$modal-content-width: 1280px !important;
 
 @import '~bulma/bulma.sass';
 
@@ -51,6 +52,6 @@ a {
 }
 
 html {
-    background-color: #202225 !important;
+    background-color: #151515 !important;
 }
 </style>
