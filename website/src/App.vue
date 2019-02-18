@@ -1,18 +1,10 @@
 <template>
   <div id="app">
-
-    <!-- <NavBar /> -->
-
     <router-view />
-
-    <!-- <Footer /> -->
-   </div>
+  </div>
 </template>
 
 <script>
-// import NavBar from './components/NavBar.vue';
-// import Footer from './components/Footer.vue';
-
 export default {
   name: 'App',
   metaInfo: function() {
@@ -24,22 +16,19 @@ export default {
         { property: 'og:image', content: '/public/logo.png' }
       ],
       link: [
-        // { rel: 'stylesheet', href: 'https://jenil.github.io/bulmaswatch/darkly/bulmaswatch.min.css' },
         { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.2.0/css/all.css' },
         { rel: 'stylesheet', href: 'https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css' }
-      ]
+        ]
     }
-  },
-  components: {
-    // NavBar,
-    // Footer
-  },
+  }
 };
 </script>
 
 <style lang="scss">
 $primary: #dd9323;
-$modal-content-width: 1280px !important;
+$dark: #151515;
+$modal-content-width: 1300px !important;
+$body-background-color: $dark !important;
 
 @import '~bulma/bulma.sass';
 
@@ -49,9 +38,5 @@ $modal-content-width: 1280px !important;
 
 a {
   color: $primary;
-}
-
-html {
-    background-color: #151515 !important;
 }
 </style>
