@@ -15,7 +15,7 @@ before_script:
   # - curl -L https://github.com/docker/compose/releases/download/1.8.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
   # - chmod +x /usr/local/bin/docker-compose
   # - pip install docker-compose
-  - apk add openssh-client bash
+  - apk add openssh-client bash qq sshpass
   - mkdir -p ~/.ssh
   - chmod 700 ~/.ssh
   # - 'which ssh-agent || apk add openssh-client'
@@ -40,7 +40,7 @@ test:
   script:
     - echo "Run tests in this section"
     - touch hello_world.txt
-    - scp -t -t hello_world:root@8.9.5.233/root
+    - sshpass -e scp -r . root@8.9.5.233:/root
     # - ssh -t -t root@8.9.5.233 > touch hello_world.txt
     - echo "Finish tests"
 
