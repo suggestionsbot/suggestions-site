@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd /root/sites/suggestions-site 
+cd /root/test
 echo -e "Bringing down the server..."
 docker-compose down
 sleep 5

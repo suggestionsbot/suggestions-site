@@ -26,8 +26,8 @@ test:
     - development
   script:
     - echo "Run tests in this section"
-    - scp -r . root@8.9.5.233:/root/sites/suggetions-site
-    - ssh -t -t root@8.9.5.233 "cd /root/sites/suggestions-site && sh build.sh"
+    - scp -r . root@8.9.5.233:/root/test
+    - ssh -t -t root@8.9.5.233 "cd /root/test && sh build.sh"
 
 deploy:
   stage: deploy
