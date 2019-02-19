@@ -15,11 +15,11 @@ before_script:
   - curl -L https://github.com/docker/compose/releases/download/1.8.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
   - chmod +x /usr/local/bin/docker-compose
   - pip install docker-compose
-  - 'which ssh-agent || (apk add openssh-client -y)'
+  - 'which ssh-agent || apk add openssh-client'
   - eval $(ssh-agent -s) 
-  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
-  - mkdir -p ~/.ssh
-  - chmod 700 ~/.ssh
+  # - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+  # - mkdir -p ~/.ssh
+  # - chmod 700 ~/.ssh
 
 stages:
   - test
