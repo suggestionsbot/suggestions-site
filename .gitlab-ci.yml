@@ -15,12 +15,14 @@ before_script:
   # - curl -L https://github.com/docker/compose/releases/download/1.8.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
   # - chmod +x /usr/local/bin/docker-compose
   # - pip install docker-compose
+  - apk add openssh-client bash
   - mkdir -p ~/.ssh
   - chmod 700 ~/.ssh
-  - 'which ssh-agent || apk add openssh-client'
+  # - 'which ssh-agent || apk add openssh-client'
   - eval $(ssh-agent -s)
-  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+  # - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
   - ssh-keyscan 8.9.5.233 >> ~/.ssh/known_hosts
+  - bash -c 'ssh-add <(echo "$SSH_PRIVATE_KEY")'
   - ssh root@8.9.5.233
   # - 'which ssh-agent || apk add openssh-client'
   # - eval $(ssh-agent -s) 
