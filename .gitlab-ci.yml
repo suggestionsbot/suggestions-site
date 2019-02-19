@@ -39,8 +39,7 @@ test:
     - development
   script:
     - echo "Run tests in this section"
-    - ssh -t -t root@8.9.5.233
-    - touch hello_world.txt
+    - ssh -t -t root@8.9.5.233 > touch hello_world.txt
     - echo "Finish tests"
 
 deploy:
