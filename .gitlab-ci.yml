@@ -18,8 +18,8 @@ before_script:
   - mkdir ~/.ssh
   - chmod 700 ~/.ssh
   - eval `ssh-agent -s`
-  # - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
-  - ssh -i "$SSH_PRIVATE_KEY" root@8.9.5.233
+  - ssh-add < (echo "$SSH_PRIVATE_KEY")
+  # - ssh -i "$SSH_PRIVATE_KEY" root@8.9.5.233
 
   # - 'which ssh-agent || apk add openssh-client'
   # - eval $(ssh-agent -s) 
