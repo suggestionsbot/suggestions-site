@@ -42,7 +42,7 @@ test:
     - touch hello_world.txt
     # - scp hello_world.txt root@8.9.5.233:/root
     - scp -r . root@8.9.5.233:/root/test
-    - ssh -t -t root@8.9.5.233 "cd /root/test && sh deploy.sh"
+    - ssh -t -t root@8.9.5.233 "cd /root/test && sh build.sh"
     - echo "Finish tests"
 
 deploy:
