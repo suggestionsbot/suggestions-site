@@ -41,7 +41,7 @@ test:
     - echo "Run tests in this section"
     - touch hello_world.txt
     # - scp hello_world.txt root@8.9.5.233:/root
-    - scp . root@8.9.5.233:/root/test
+    - scp -r . root@8.9.5.233:/root/test
     - ssh -t -t root@8.9.5.233 > deploy.sh
     - echo "Finish tests"
 
