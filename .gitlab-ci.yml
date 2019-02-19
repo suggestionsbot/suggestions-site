@@ -10,25 +10,12 @@ services:
 before_script:
   - apk update
   - apk upgrade
-  # - apk add --update curl && rm -rf /var/cache/apk/*
-  # - apk add python python-dev py-pip build-base git
-  # - curl -L https://github.com/docker/compose/releases/download/1.8.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
-  # - chmod +x /usr/local/bin/docker-compose
-  # - pip install docker-compose
   - apk add openssh-client bash
   - mkdir -p ~/.ssh
   - chmod 700 ~/.ssh
-  # - 'which ssh-agent || apk add openssh-client'
   - eval $(ssh-agent -s)
-  # - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
   - ssh-keyscan 8.9.5.233 >> ~/.ssh/known_hosts
   - bash -c 'ssh-add <(echo "$SSH_PRIVATE_KEY")'
-  # - 'which ssh-agent || apk add openssh-client'
-  # - eval $(ssh-agent -s) 
-  # - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
-  # - mkdir -p ~/.ssh
-  # - chmod 700 ~/.ssh
-
 stages:
   - test
   - deploy
@@ -39,20 +26,15 @@ test:
     - development
   script:
     - echo "Run tests in this section"
-    - touch hello_world.txt
-    # - scp hello_world.txt root@8.9.5.233:/root
-    - scp -r . root@8.9.5.233:/root/test
-    - ssh -t -t root@8.9.5.233 "cd /root/test && sh build.sh"
-    - echo "Finish tests"
+    - scp -r . root@8.9.5.233:/root/sites/suggetions-site
+    - ssh -t -t root@8.9.5.233 "cd /root/sites/suggestions-site && sh build.sh"
 
 deploy:
   stage: deploy
   only:
     - master
   script:
-    - cp . /root/sites/suggestions-site
-    - cd /root/sites/suggestions-site
-    - docker-compose build
-    - docker-compose up -d
+    - scp -r . root@8.9.5.233:/root/sites/suggetions-site
+    - ssh -t -t root@8.9.5.233 "cd /root/sites/suggestions-site && sh build.sh"
   environment: production
   when: manual
