@@ -4,7 +4,7 @@
   "description": "Serves the API and website.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ."
   },
   "author": "acollierr17 <gamemaniac101@gmail.com>",
   "license": "MIT",
