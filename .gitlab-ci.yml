@@ -23,7 +23,7 @@ before_script:
   # - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
   - ssh-keyscan 8.9.5.233 >> ~/.ssh/known_hosts
   - bash -c 'ssh-add <(echo "$SSH_PRIVATE_KEY")'
-  - ssh root@8.9.5.233
+  - ssh -t -t root@8.9.5.233
   # - 'which ssh-agent || apk add openssh-client'
   # - eval $(ssh-agent -s) 
   # - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
