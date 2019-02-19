@@ -15,7 +15,7 @@ before_script:
   # - curl -L https://github.com/docker/compose/releases/download/1.8.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
   # - chmod +x /usr/local/bin/docker-compose
   # - pip install docker-compose
-  - apk add openssh-client bash qq sshpass
+  - apk add openssh-client bash -qq sshpass
   - mkdir -p ~/.ssh
   - chmod 700 ~/.ssh
   # - 'which ssh-agent || apk add openssh-client'
