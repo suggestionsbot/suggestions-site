@@ -11,12 +11,13 @@ before_script:
   - apk update
   - apk upgrade
   - apk add --update curl && rm -rf /var/cache/apk/*
-  - apk add python python-dev py-pip build-base git openssh-client
+  - apk add python python-dev py-pip build-base git
   - curl -L https://github.com/docker/compose/releases/download/1.8.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
   - chmod +x /usr/local/bin/docker-compose
   - pip install docker-compose
   - mkdir -p ~/.ssh
   - chmod 700 ~/.ssh
+  - 'which ssh-agent || ( apk add --update openssh-client )'
   - eval $(`ssh-agent -s`)
   - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
   - ssh-keyscan 8.9.5.233 >> ~/.ssh/known_hosts
