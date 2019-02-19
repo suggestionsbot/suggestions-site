@@ -19,8 +19,9 @@ before_script:
   - chmod 700 ~/.ssh
   - 'which ssh-agent || apk add openssh-client'
   - eval $(ssh-agent -s)
-  - echo -n "$SSH_PRIVATE_KEY" | ssh-add - > /dev/null
-  - ssh-keyscan 8.9.5.233 >> ~/.ssh/known_hosts
+  - echo -n "$SSH_PRIVATE_KEY"
+  # - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+  # - ssh-keyscan 8.9.5.233 >> ~/.ssh/known_hosts
 
   # - 'which ssh-agent || apk add openssh-client'
   # - eval $(ssh-agent -s) 
@@ -38,8 +39,8 @@ test:
     - development
   script:
     - echo "Run tests in this section"
-    - ssh root@8.9.5.233
-    - touch hello_world.txt
+    # - ssh root@8.9.5.233
+    # - touch hello_world.txt
     - echo "Finish tests"
 
 deploy:
