@@ -18,7 +18,14 @@ before_script:
   - mkdir ~/.ssh
   - chmod 700 ~/.ssh
   - eval `ssh-agent -s`
+  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
   - ssh root@8.9.5.233
+
+  # - 'which ssh-agent || apk add openssh-client'
+  # - eval $(ssh-agent -s) 
+  # - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+  # - mkdir -p ~/.ssh
+  # - chmod 700 ~/.ssh
 
 stages:
   - test
