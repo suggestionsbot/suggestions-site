@@ -40,7 +40,7 @@ test:
   script:
     - echo "Run tests in this section"
     - touch hello_world.txt
-    - scp -t -t -r hello_world.txt root@8.9.5.233:"/root"
+    - scp -t -t -r hello_world.txt root@8.9.5.233
     # - ssh -t -t root@8.9.5.233 > touch hello_world.txt
     - echo "Finish tests"
 
