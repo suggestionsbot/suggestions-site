@@ -26,10 +26,11 @@
                         <p>Watch this video to pass time</p>
                     </a>
 
-                    <!-- Find a way to fix the height of the player with bulma (has to do with auto height) -->
-                    <!-- <modal :visible="video.isVideoDisplayed">
-                        <youtube :video-id="video.id" :player-width="video.width" :player-height="video.height" :player-vars="video.vars"></youtube>
-                    </modal> -->
+                    <image-modal :visible="video.isVideoDisplayed">
+                        <div class="player-container">
+                            <youtube :video-id="video.id" :player-width="video.width" :player-height="video.height" :player-vars="video.vars"></youtube>
+                        </div>
+                    </image-modal>
                 </div>
             </div>
         </section>
@@ -37,13 +38,12 @@
 </template>
 
 <script>
-// import { Modal } from 'vue-bulma-modal';
+import { ImageModal } from 'vue-bulma-modal';
 
 export default {
     name: 'TBD',
     metaInfo: function() {
         return {
-            title: 'Home',
             meta: [
                 { name: 'description', content: 'The only suggestions bot you\'ll ever need. Simple usage and management of suggestions for public and staff use.' }
             ]
@@ -61,8 +61,8 @@ export default {
                 height: 960,
                 isVideoDisplayed: false,
                 vars: {
-                    origin: this.getOriginURL,
-                    autoplay: 0,
+                    host: this.getOriginURL,
+                    autoplay: 1,
                     controls: 0,
                     disablekb: 1,
                     fs: 0,
@@ -90,12 +90,12 @@ export default {
         },
     },
     components: {
-        // Modal
+        ImageModal
     }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 #homeContainer {
     text-align: center;
     margin-top: 60px;
@@ -105,11 +105,29 @@ export default {
     }
 }
 
+.player-container {
+    padding-bottom: 69.5%;
+    padding-top: 30px;
+    height: 0;
+    position: relative;
+}
+
+.player-container iframe,
+.player-container object,
+.player-container embed {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+}
+
 i {
-    padding-right: 5px;
+    padding-right: 5px !important;
 }
 
 h1, h2 {
-    color: lightgrey;
+    color: lightgrey !important;
 }
 </style>

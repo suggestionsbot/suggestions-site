@@ -14,7 +14,7 @@ const TBD = () => import('@/views/TBD');
 const routes = [
     {
         path: '/',
-        name: 'home',
+        name: 'tbd',
         component: TBD,
         title: 'Home'
     },
