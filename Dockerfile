@@ -7,6 +7,7 @@ COPY . /usr/src/site
 
 # Build files for production
 WORKDIR /usr/src/site/website
+RUN npm install
 RUN npm run build
 
 # Install dependencies for express server
