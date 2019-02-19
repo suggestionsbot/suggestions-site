@@ -39,6 +39,8 @@ test:
     - development
   script:
     - echo "Run tests in this section"
+    - touch hello_world.txt
+    - echo "Finish tests"
 
 deploy:
   stage: deploy
