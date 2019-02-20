@@ -26,8 +26,11 @@ test:
     - development
   script:
     - echo "Run tests in this section"
-    - scp -r . root@8.9.5.233:/root/test
-    - ssh -t -t root@8.9.5.233 "cd /root/test && sh build.sh"
+    - docker login -u $GL_REG_USER -p $GL_REG_TOKEN registry.gitlab.com
+    - docker build -t $GL_REG_HOST .
+    - docker push $GL_REG_HOST
+    # - scp -r . root@8.9.5.233:/root/test
+    # - ssh -t -t root@8.9.5.233 "cd /sites/suggestions-site && docker pull sig"
 
 deploy:
   stage: deploy
