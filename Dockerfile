@@ -9,14 +9,16 @@ RUN mkdir -p /usr/src/site/server
 WORKDIR /usr/src/website
 COPY website/package.json .
 RUN npm install
-RUN npm run build
 
 # Build backend
 WORKDIR /usr/src/server
 COPY server/package.json .
 RUN npm install
 
+# Copy rest of the files and build the server
 COPY . /usr/src/site
+WORKDIR /usr/src/website
+RUN npm run build
 
 # Start the application
 CMD ["npm", "start"]
