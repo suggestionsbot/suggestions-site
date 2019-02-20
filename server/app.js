@@ -9,11 +9,7 @@ app.use(helmet());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, '/public/')));
-
-    app.get(/.*/, (req, res) => res.sendFile(path.join(__dirname, 'public/index.html')));
-}
+app.use(express.static(path.join(__dirname, '/public/')));
 
 app.get('/api', (req, res, next) => {
     res.status(404).json({ 
