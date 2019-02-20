@@ -11,16 +11,3 @@ services:
       ports:
         - '5000:5000'
       restart: always
-      labels:
-        traefik.backend: 'suggestions'
-        traefik.domain: 'dev-site.suggestionsbot.com'
-        traefik.frontend.rule: 'Host:dev-site.suggestionsbot.com'
-        traefik.frontend.port: '5000'
-        traefik.frontend.entryPoints: 'http,https'
-        treafik.frontend.priority: '2'
-        traefik.enable: 'true'
-      networks:
-        - web
-networks:
-  web:
-    external: true

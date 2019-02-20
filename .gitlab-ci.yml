@@ -27,17 +27,16 @@ test:
   script:
     - echo "Run tests in this section"
     - docker login -u $GL_REG_USER -p $GL_REG_TOKEN registry.gitlab.com
-    - docker build -t $GL_REG_HOST .
-    - docker push $GL_REG_HOST
-    # - scp -r . root@8.9.5.233:/root/test
-    # - ssh -t -t root@8.9.5.233 "cd /sites/suggestions-site && docker pull sig"
+    - echo "Container registry log in successful"
 
 deploy:
   stage: deploy
   only:
     - master
   script:
-    - scp -r . root@8.9.5.233:/root/sites/suggetions-site
-    - ssh -t -t root@8.9.5.233 "cd /root/sites/suggestions-site && sh build.sh"
+    - docker login -u $GL_REG_USER -p $GL_REG_TOKEN registry.gitlab.com
+    - docker build -t $GL_REG_HOST .
+    - docker push $GL_REG_HOST
+    - ssh -t -t root@8.9.5.233 "cd /sites/suggestions-site && docker-compose pull && docker-compose up -d"
   environment: production
   when: manual
