@@ -37,6 +37,6 @@ deploy:
     - docker login -u $GL_REG_USER -p $GL_REG_TOKEN registry.gitlab.com
     - docker build -t $GL_REG_HOST .
     - docker push $GL_REG_HOST
-    - ssh -t -t root@8.9.5.233 "cd /root/sites/suggestions-site && docker-compose pull && docker-compose up -d"
+    - ssh -t -t root@8.9.5.233 "cd /root/sites/suggestions-site && docker-compose pull && docker-compose down && docker-compose up -d"
   environment: production
   when: manual
