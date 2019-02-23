@@ -16,7 +16,7 @@ export default {
                 { name: '© 2019 Nerd Cave Development', url: 'https://thenerdcave.us' },
                 { name: 'Privacy Policy', url: '/privacy' },
                 { name: 'Terms of Service', url: '/terms' },
-                { name: 'Contact', url: '/contact' }
+                { name: 'Contact', url: 'https://discord.gg/g7wr8xb' }
             ]
         };
     },
@@ -34,8 +34,6 @@ export default {
 
 <style lang="scss">
 $primary: #dd9323;
-
-@import '~bulma/bulma.sass';
 
 .footer {
     background-color: inherit !important;

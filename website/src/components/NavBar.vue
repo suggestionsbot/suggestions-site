@@ -3,8 +3,7 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
-          <!-- <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"> -->
-          <img src="../assets/navbar-logo.png" width="112" height="28">
+          <img src="@/assets/navbar-logo.png" width="112" height="28">
         </a>
 
         <a class="navbar-burger burger" @click="showNav = !showNav" :class="{ 'is-active': showNav }">
@@ -49,7 +48,6 @@ export default {
     data: function() {
         return {
             showNav: false,
-            showMore: false,
             mainLinks: [
               { name: 'Home', link: '/' },
               { name: 'About', link: '/about'},
@@ -61,7 +59,7 @@ export default {
             moreLinks: [
               { name: 'Terms of Service', link: '/terms' },
               { name: 'Privacy Policy', link: '/privacy' },
-              { name: 'Contact', link: '/contact' }
+              { name: 'Contact', link: 'https://discord.gg/g7wr8xb' }
             ]
         };
     },
@@ -69,32 +67,17 @@ export default {
 </script>
 
 <style lang="scss">
-$primary: #dd9323;
+$navbar-background-color: $darkergrey !important;
+$navbar-item-color: $lightergrey !important;
+$navbar-item-hover-background-color: transparent !important;
+$navbar-item-hover-color: $primary !important;
+$navbar-burger-color: $primary !important;
+$navbar-dropdown-background-color: $darkergrey !important;
 
 @import '~bulma/bulma.sass';
 
 .navbar-start {
   margin-right: inherit !important;
-
-  a:hover {
-    color: $primary !important;
-  }
-}
-
-.navbar-item, .has-dropdown, .is-hoverable {
-  a:hover {
-    color: $primary !important;
-  }
-
-  .navbar-link::after {
-      border-color: $primary !important;
-  }
-
-  .navbar-dropdown {
-    a:hover {
-      color: $primary !important;
-    }
-  }
 }
 
 i {

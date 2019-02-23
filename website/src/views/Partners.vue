@@ -2,8 +2,11 @@
     <div>
         <section class="section">
             <div class="container">
-                <h1 class="title">{{ partnersTitle }}</h1>
-                <h2 class="subtitle" v-html="partnersInformation"></h2>
+                <h1 class="title">Partners</h1>
+
+                <p>Check out our partners of the Suggestions bot and Nerd Cave Development!</p>
+
+                <p>Want to become a partner? Join our <a href="${this.supportDiscord}">Support Discord</a> today and speak with <strong>anthony#8577</strong> for partnership inquiries.</p>
             </div>
         </section>
         <section class="section partners">
@@ -13,18 +16,14 @@
                         <div class="media">
                             <div class="media-left">
                                 <figure class="image is-128x128">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                                    <img :src=partner.image :alt=partner.imageAlt>
                                 </figure>
                             </div>
                             <div class="media-content">
-                                <p class="title is-4">{{ partner.partner }}</p>
-                                <p class="subtitle is-6"><a>@{{ partner.partnerMention }}</a></p>
-                                {{ partner.description }}
+                                <p class="title is-4">{{ partner.name }}</p>
+                                <p class="subtitle is-6"><i class="fab fa-discord"></i><a :href=partner.discord>{{ partner.discord }}</a></p>
+                                <p class="partnerDescription">{{ partner.description }}</p>
                             </div>
-                        </div>
-
-                        <div class="content">
-                            <time datetime="2016-1-1">{{ partner.dateAdded }}</time>
                         </div>
                     </div>
                 </div>
@@ -46,57 +45,45 @@ export default {
     },
     data: function() {
         return {
-            partnersTitle: 'Partners',
-            partnersInformation: `
-            <br />
-            <p>Check out our partners of the Suggestions bot and Nerd Cave Development!</p>
-            <br />
-            <p>Want to become a partner? Join our <a href="${this.supportDiscord}">Support Discord</a> today and speak with <strong>anthony#8577</strong> for partnership inquiries.</p>
-            `,
             supportDiscord: 'https://discord.gg/g7wr8xb',
+            newPartner: {
+                name: 'Partner',
+                discord: 'Discord invite',
+                description: 'Information about the partner.',
+                image: 'Link to server image.'
+            },
             partners: [
-                { 
-                    partner: 'Partner 1', 
-                    partnerMention: 'partner1', 
-                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, omnis eum dolorem iusto nesciunt ipsa!', 
-                    link: 'a link here',
-                    dateAdded: new Date().toString() 
-                },
-                { 
-                    partner: 'Partner 2', 
-                    partnerMention: 'partner2', 
-                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, omnis eum dolorem iusto nesciunt ipsa!', 
-                    link: 'a link here',
-                    dateAdded: new Date().toString() 
-                    
-                },
-                { 
-                    partner: 'Partner 3', 
-                    partnerMention: 'partner3', 
-                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, omnis eum dolorem iusto nesciunt ipsa!', 
-                    link: 'a link here',
-                    dateAdded: new Date().toString() 
+                {
+                    name: 'No Partners 😔',
+                    discord: 'https://discord.gg/g7wr8xb',
+                    description: 'Currently, we do not have any partners. But that can change. Read above for more information!',
+                    image: require('../assets/nerd-cave-development.png'),
+                    imageAlt: 'Nerd Cave Development logo'
                 },
             ]
         }
-    }
+    },
 }
 </script>
 
 <style lang="scss">
-$primary: #dd9323;
+$card-background-color: #2e3131;
 
 @import '~bulma/bulma.sass';
 
-.centerContact {
-    padding: 30px;
-}
+.container {
+    max-width: 750px;
 
-a {
-    color: $primary;
+    a:hover {
+        text-decoration: underline;
+    }
 }
 
 .section, .partners {
     margin-bottom: -50px;
+}
+
+.partnerDescription, .partnerAdded {
+    color: $lightergrey !important;
 }
 </style>
