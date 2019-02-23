@@ -22,6 +22,6 @@ COPY . /usr/src/site
 WORKDIR /usr/src/website
 RUN npm run build
 
-# Start the application
+# Move to server folder and start the application
 WORKDIR /usr/src/server
 CMD ["npm", "start"]
