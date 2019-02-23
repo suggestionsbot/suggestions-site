@@ -21,4 +21,5 @@ WORKDIR /usr/src/website
 RUN npm run build
 
 # Start the application
+WORKDIR /usr/src/server
 CMD ["npm", "start"]

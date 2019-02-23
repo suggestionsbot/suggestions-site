@@ -8,5 +8,15 @@ module.exports = {
                 target: 'http://localhost:3000/api/v1'
             }
         }
+    },
+    css: {
+        loaderOptions: {
+            sass: {
+                data: `
+                    @import "@/scss/_variables.scss";
+                    @import '~bulma/bulma.sass';
+                `
+            }
+        }
     }
 };

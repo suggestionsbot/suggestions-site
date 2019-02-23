@@ -1,15 +1,15 @@
 <template>
-    <div>
+    <div class="home">
         <section class="section">
             <div class="container" id="homeContainer">
                 <img alt="Vue logo" src="../assets/logo.png">
-                <h1 class="title">{{ siteName }}</h1>
+                <h1 class="title">Suggestions</h1>
                 <h2 class="subtitle">
-                    {{ siteDescription }}
+                    The only suggestions bot you'll ever need. Simple usage and management of suggestions for public and staff use.
                 </h2>
                 <a class="button is-primary">
                     <i class="fab fa-discord"></i>
-                    <p>Add to your server</p>
+                    <p><strong>Add the Suggestions bot</strong></p>
                 </a>
             </div>
         </section>
@@ -17,71 +17,124 @@
             <div class="container" id="featuresContainer">
                 <h1 class="title">Features</h1>
                 <h2 class="subtitle">
-                    Powerful features to help you get the most out of your Discord with the Suggestions bot.
+                    Get the most out of the Suggestions bot in your server. 
                 </h2>
             </div>
             <br />
-            <div class="tile is-ancestor">
-                <div class="tile is-vertical is-8">
-                    <div class="tile">
-                        <div class="tile is-parent is-vertical">
-                            <article class="tile is-child notification is-primary">
-                                <p class="title">Emoji sets</p>
-                                <p class="subtitle">
-                                    Take control of customization by choosing what reactions get added to suggestions and the ability to suggest new emoji sets 
-                                    as you please.
-                                </p>
-                                <figure class="image is-4by3">
-                                    <img src="https://bulma.io/images/placeholders/640x480.png">
-                                </figure>
-                            </article>
-                            <article class="tile is-child notification is-warning">
-                                <p class="title">Easy as 1 2 3!</p>
-                                <p class="subtitle">
-                                    There shouldn't be a hassle when setting up a simple bot. There are only a few easy steps to follow before you get going!
-                                </p>
-                            </article>
-                        </div>
-                        <div class="tile is-parent">
-                            <article class="tile is-child notification is-info">
-                                <p class="title">Middle tile</p>
-                                <p class="subtitle">With an image</p>
-                                <figure class="image is-4by3">
-                                    <img src="https://bulma.io/images/placeholders/640x480.png">
-                                </figure>
-                            </article>
-                        </div>
+            <div class="features">
+                <article class="message is-info">
+                    <div class="message-header">
+                        <p>💼 Management</p>
                     </div>
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification is-danger">
-                            <p class="title">Constant updates</p>
-                            <p class="subtitle">
-                                Placeholder.
-                            </p>
-                            <div class="content">
-                                <!-- Content -->
-                                <!-- The bot is always being updated. Feedback from the people who use the bot daily and ideas from the developer is what keeps this
-                                project alive! -->
-                            </div>
-                        </article>
+                    <div class="message-body">
+                        <p>Organization will not be an issue with the Suggestions bot. Interact with suggestions in various ways.</p>
+                        
+                        <p>Need to clarify something to the community? Add a note using the <code>note</code> command. Add as many as you need.
+                        The bot will update the message with the newest note. See all notes of a suggestion via the dashboard*!</p>
+                        <figure>
+                            <img :src=images.suggestionNotes alt="Suggestion notes">
+                            <figcaption class="caption">A suggestion note.</figcaption>
+                        </figure>
+                        
+                        <p>Implemented a new suggestion? Or did the suggestion not fit the prerequisites or downvoted by the community?
+                            Manage these suggestions with the <code>approve</code> or <code>reject</code> commands so you and the community
+                            know what is and isn't going on currently.
+                        </p>
+                        <figure>
+                            <img :src=images.suggestionApproved alt="Approved suggestion">
+                            <figcaption class="caption">An approved suggestion.</figcaption>
+                        </figure>
+                        <em style="font-size: 14px;">* The dashboard is still a work in progress.</em>
                     </div>
-                </div>
-                <div class="tile is-parent">
-                    <article class="tile is-child notification is-success">
-                        <div class="content">
-                            <p class="title">Suggestion management</p>
-                            <p class="subtitle">
-                                Allow your staff members to deal with suggestions without hassle.
-                            </p>
-                            <div class="content">
-                                <!-- Content -->
-                                <!-- Approve, reject and add notes to suggestions. Every good Discord
-                                community is based on good communication. -->
-                            </div>
-                        </div>
-                    </article>
-                </div>
+                </article>
+
+                <article class="message">
+                    <div class="message-header">
+                        <p>🎨 Customization</p>
+                    </div>
+                    <div class="message-body">
+                        <p>With the Suggestions bot, we try to unpack features that allow you as a server owner or administrator to
+                            customize features of the bot your and your community's liking. Keep reading for some examples of what
+                            can be customized.
+                        </p>
+
+                        <p>Want to change what emojis are added to suggestions? Us too, sometimes. Simply use the <code>setvotes</code>
+                        command to do that!</p>
+                        <figure>
+                            <img :src=images.voteEmojis alt="Emoji sets">
+                            <figcaption class="caption">Various emoji sets to choose from.</figcaption>
+                        </figure>
+
+                        <p>What about the prefix? Or the suggestions channel? Don't worry. We have that covered 👍. You can use
+                            commands like <code>setprefix</code> and <code>setchannel</code> to do that.
+
+                            And there's one more thing... you can add/remove any roles you want to manage suggestions. Check out 
+                            the <code>role</code> command as well as the <code>roles</code> command if you want to view who can
+                            manage suggestions.
+                        </p>
+                        <figure>
+                            <img :src=images.suggestionRoles alt="Suggestions bot roles and admins">
+                            <figcaption class="caption">Suggestions bot roles and admins in a guild.</figcaption>
+                        </figure>
+                    </div>
+                </article>
+
+                <article class="message is-link">
+                    <div class="message-header">
+                        <p>📊 Statistics</p>
+                    </div>
+                    <div class="message-body">
+                        <p>Over the past several months, the Suggestions bot has been collecting statistics of different areas of the bot.
+                            And don't worry. Your information is secured! Check out the <a href="/privacy" target="_blank">Privacy Policy</a> for more information.
+
+                            Information such as how many suggestions have been submitted, approved, rejected, notes, command usage, etc. is tracked and 
+                            can be viewed in Discord or on the dashboard*.
+                        </p>
+
+                        <figure>
+                            <img :src=images.suggestionServerStats alt="A guild's server stats">
+                            <figcaption class="caption">Statistics for a specific guild.</figcaption>
+                        </figure>
+
+                        <p>Want to view your own statistics? Or another member's statistics? That's easy. Just use the <code>suggestions</code> command.
+                        Simply mention another user to view their information.</p>
+
+                        <figure>
+                            <img :src=images.suggestionMemberStats alt="A member's statistics">
+                            <figcaption class="caption">View a specific member's statistics.</figcaption>
+                        </figure>
+
+                        <em style="font-size: 14px;">* The dashboard is still a work in progress.</em>
+                    </div>
+                </article>
+
+                <article class="message is-success">
+                    <div class="message-header">
+                        <p>🔖 Documentation</p>
+                    </div>
+                    <div class="message-body">
+                        <p>Want to unlock the full potential of the Suggestions bot and become a power user? It's recommended to check out
+                            the documentation where you can find everything you need regarding the bot's usage. From setting up staff roles
+                            to creating a staff-only suggestions channel. Check it out below!
+                        </p>
+                        <a href="https://docs.suggestionsbot.com" target="_blank" class="button is-success">Click me!</a>
+                    </div>
+                </article>
+
+                <article class="message">
+                    <class class="message-header is-primary">
+                        <p>❗ Get Started</p>
+                    </class>
+                    <div class="message-body">
+                        <p>What are you waiting for? Like what you see? Start below!</p>
+                        <a class="button is-link">
+                            <i class="fab fa-discord"></i>
+                            <p><strong>Add the Suggestions bot</strong></p>
+                        </a>
+                    </div>
+                </article>
             </div>
+            
         </section>
     </div>
 </template>
@@ -93,29 +146,59 @@ export default {
         return {
             title: 'Home',
             meta: [
-                { name: 'description', content: this.siteDescription }
+                { name: 'description', content: 'The only suggestions bot you\'ll ever need. Simple usage and management of suggestions for public and staff use.' }
             ]
             
         }
     },
     data: function() {
         return {
-            siteName: 'Suggestions',
-            siteAuthor: 'anthony#8577',
-            siteDescription: 'The only suggestions bot you\'ll ever need. Simple usage and management of suggestions for public and staff use.',
-            botInvite: 'https://discordapp.com/oauth2/authorize?client_id=474051954998509571&scope=bot&permissions=93248'
+            botInvite: 'https://discordapp.com/oauth2/authorize?client_id=474051954998509571&scope=bot&permissions=93248',
+            images: {
+                voteEmojis: require('../assets/homepage-voteEmojis.png'),
+                suggestionNotes: require('../assets/homepage-suggestionNotes.png'),
+                suggestionApproved: require('../assets/homepage-approvedSuggestion.png'),
+                suggestionRoles: require('../assets/homepage-suggestionRoles.png'),
+                suggestionServerStats: require('../assets/homepage-serverStats.png'),
+                suggestionMemberStats: require('../assets/homepage-memberStats.png'),
+
+            }
         };
     }
 }
 </script>
 
-<style scoped>
+<style lang="scss">
+
 #homeContainer, #featuresContainer {
     text-align: center;
     margin-top: 60px;
 }
 
+#homeContainer {
+    margin-bottom: -75px;
+}
+
+#featuresContainer {
+    margin-bottom: -45px;
+}
+
 i {
     padding-right: 5px;
+}
+
+.features {
+    margin: 10px;
+    max-width: 1080px;
+    display: block;
+    padding-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+.featureTitle {
+    color: $primary;
 }
 </style>

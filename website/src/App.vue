@@ -1,16 +1,21 @@
 <template>
   <div id="app">
+    <Navbar />
     <router-view />
+    <Footer />
   </div>
 </template>
 
 <script>
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+
 export default {
   name: 'App',
   metaInfo: function() {
     return {
       title: 'Suggestions',
-      titleTemplate: '%s / Suggestions',
+      titleTemplate: '%s | Suggestions',
       meta: [
         { name: 'theme-color', content: '#dd9323' },
         { property: 'og:image', content: '/public/logo.png' }
@@ -20,23 +25,14 @@ export default {
         { rel: 'stylesheet', href: 'https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css' }
         ]
     }
+  },
+  components: {
+    Navbar,
+    Footer
   }
 };
 </script>
 
 <style lang="scss">
-$primary: #dd9323;
-$dark: #151515;
-$modal-content-width: 1300px !important;
-$body-background-color: $dark !important;
-
-@import '~bulma/bulma.sass';
-
-.is-primary {
-  background-color: $primary !important;
-}
-
-a {
-  color: $primary;
-}
+@import '@/scss/styles.scss';
 </style>

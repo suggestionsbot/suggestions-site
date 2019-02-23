@@ -9,9 +9,12 @@
   "author": "acollierr17 <gamemaniac101@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.18.0",
     "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
-    "helmet": "^3.15.1"
+    "helmet": "^3.15.1",
+    "mongoose": "^5.4.14"
   }
 }
