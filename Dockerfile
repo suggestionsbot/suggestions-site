@@ -16,7 +16,9 @@ COPY server/package.json .
 RUN npm install
 
 # Copy rest of the files and build the server
+WORKDIR /usr/src/site
 COPY . /usr/src/site
+
 WORKDIR /usr/src/website
 RUN npm run build
 
