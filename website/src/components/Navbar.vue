@@ -37,12 +37,13 @@
             </div>
           </div>
         </div>
-      </div>
+      </div>`
     </nav>
   </div>
 </template>
 
 <script>
+// Navbar comment to fix renamed component
 export default {
     name: 'NavBar',
     data: function() {
