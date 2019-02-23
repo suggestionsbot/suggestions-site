@@ -3,7 +3,7 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
-          <img src="@/assets/navbar-logo.png" width="112" height="28">
+          <img :src=navbarLogo width="112" height="28">
         </a>
 
         <a class="navbar-burger burger" @click="showNav = !showNav" :class="{ 'is-active': showNav }">
@@ -14,9 +14,9 @@
       </div>
 
       <div id="navbarBasicExample" class="navbar-menu" :class="{ 'is-active': showNav }">
-
         <div class="navbar-start" v-for="(link, index) in mainLinks" :key="index">
-          <a :href=link.link class="navbar-item"><strong>{{ link.name }}</strong></a>
+          <a :href=link.link target="_blank" class="navbar-item" v-if="link.external"><strong>{{ link.name }}</strong></a>
+          <a :href=link.link class="navbar-item" v-else><strong>{{ link.name }}</strong></a>
         </div>
 
         <div class="navbar-item has-dropdown is-hoverable">
@@ -48,18 +48,19 @@ export default {
     data: function() {
         return {
             showNav: false,
+            navbarLogo: require('../assets/navbar-logo.png'),
             mainLinks: [
               { name: 'Home', link: '/' },
-              { name: 'About', link: '/about'},
-              { name: 'Documentation', link: 'https://docs.suggestionsbot.com'},
-              { name: 'Discord', link: 'https://discord.gg/g7wr8xb' },
-              { name: 'Patreon', link: 'https://patreon.com/acollierr17'},
+              { name: 'About', link: '/about' },
+              { name: 'Documentation', link: 'https://docs.suggestionsbot.com', external: true },
+              { name: 'Discord', link: 'https://discord.gg/g7wr8xb', external: true },
+              { name: 'Patreon', link: 'https://patreon.com/acollierr17', external: true },
               { name: 'Partners', link: '/partners'},
             ],
             moreLinks: [
               { name: 'Terms of Service', link: '/terms' },
               { name: 'Privacy Policy', link: '/privacy' },
-              { name: 'Contact', link: 'https://discord.gg/g7wr8xb' }
+              { name: 'Contact', link: 'https://discord.gg/g7wr8xb', external: true }
             ]
         };
     },

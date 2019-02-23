@@ -8,7 +8,6 @@ const About = () => import('@/views/About');
 const Privacy = () => import('@/views/Privacy');
 const Terms = () => import('@/views/Terms');
 const Partners = () => import('@/views/Partners');
-
 const NotFound = () => import('@/views/NotFound');
 
 const routes = [

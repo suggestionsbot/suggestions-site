@@ -38,7 +38,7 @@
                         
                         <p>Implemented a new suggestion? Or did the suggestion not fit the prerequisites or downvoted by the community?
                             Manage these suggestions with the <code>approve</code> or <code>reject</code> commands so you and the community
-                            knows what is and isn't going on currently.
+                            know what is and isn't going on currently.
                         </p>
                         <figure>
                             <img :src=images.suggestionApproved alt="Approved suggestion">
@@ -58,7 +58,7 @@
                             can be customized.
                         </p>
 
-                        <p>Want to change what emojis are added to suggestions? Us to, sometimes. Simply use the <code>setvotes</code>
+                        <p>Want to change what emojis are added to suggestions? Us too, sometimes. Simply use the <code>setvotes</code>
                         command to do that!</p>
                         <figure>
                             <img :src=images.voteEmojis alt="Emoji sets">
@@ -87,7 +87,7 @@
                         <p>Over the past several months, the Suggestions bot has been collecting statistics of different areas of the bot.
                             And don't worry. Your information is secured! Check out the <a href="/privacy" target="_blank">Privacy Policy</a> for more information.
 
-                            Information such as how many suggestions has been submitted, approved, rejected, notes, command usage, etc. is tracked and 
+                            Information such as how many suggestions have been submitted, approved, rejected, notes, command usage, etc. is tracked and 
                             can be viewed in Discord or on the dashboard*.
                         </p>
 
@@ -110,10 +110,10 @@
 
                 <article class="message is-success">
                     <div class="message-header">
-                        <p>📁 Documentation</p>
+                        <p>🔖 Documentation</p>
                     </div>
                     <div class="message-body">
-                        <p>Want to unlock the full potential of the Suggetions bot and become a power user? It's recommended to check out
+                        <p>Want to unlock the full potential of the Suggestions bot and become a power user? It's recommended to check out
                             the documentation where you can find everything you need regarding the bot's usage. From setting up staff roles
                             to creating a staff-only suggestions channel. Check it out below!
                         </p>

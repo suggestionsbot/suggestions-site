@@ -4,6 +4,7 @@ const path = require('path');
 const app = express();
 const bodyParser = require('body-parser');
 const helmet = require('helmet');
+const cors = require('cors');
 const mongoose = require('mongoose');
 
 const routes = require('./api');
@@ -18,9 +19,13 @@ const dbOptions = {
     family: 4
 };
 
-const dbURI = process.env.MONGO_URI || 'mongodb://localhost:27017/suggestions-dev'
+let dbURI;
+if (process.env.NODE_ENV === 'production') dbURI = process.env.MONGO_URI;
+else dbURI = 'mongodb://localhost:27017/suggestions-dev';
+
 const globalRoute = '/api/v1';
 
+app.use(cors());
 app.use(helmet());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -31,7 +36,7 @@ mongoose.Promise = global.Promise;
 app.use(express.static(path.join(__dirname, '/public/')));
 // app.use(globalRoute, routes.Blacklists);
 // app.use(globalRoute, routes.Commands);
-app.use(`${globalRoute}/guilds`, routes.Guilds);
+// app.use(`${globalRoute}/guilds`, routes.Guilds);
 // app.use(globalRoute, routes.Suggestions);
 
 app.get('/api', (req, res, next) => {
