@@ -16,7 +16,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'The only suggestions bot you\'ll ever need. Simple usage and management of suggestions for public and staff use.' },
       { hid: 'og:description', property: 'og:description', content: 'The only suggestions bot you\'ll ever need. Simple usage and management of suggestions for public and staff use.' },
       { name: 'theme-color', content: '#dd9323' },
-      { property: 'og:image', content: '/static/logo.png' }
+      { property: 'og:image', content: 'static/logo.png' }
     ]
   },
 
