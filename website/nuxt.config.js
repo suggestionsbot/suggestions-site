@@ -1,5 +1,3 @@
-// const pkg = require('./package')
-
 module.exports = {
   mode: 'universal',
   server: {
@@ -16,6 +14,7 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'keywords', content: 'suggestions bot, discord suggestions bot, suggestions discord' },
       { hid: 'description', name: 'description', content: 'The only suggestions bot you\'ll ever need. Simple usage and management of suggestions for public and staff use.' },
+      { hid: 'og:description', property: 'og:description', content: 'The only suggestions bot you\'ll ever need. Simple usage and management of suggestions for public and staff use.' },
       { name: 'theme-color', content: '#dd9323' },
       { property: 'og:image', content: '/static/logo.png' }
     ]
@@ -31,7 +30,9 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+    '@/assets/scss/styles.scss'
+  ],
   styleResources: {
     scss: [
       'assets/scss/_variables.scss'

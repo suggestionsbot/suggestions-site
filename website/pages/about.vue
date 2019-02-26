@@ -35,8 +35,18 @@ export default {
       title: 'About',
       meta: [
         {
+          hid: 'og:title',
+          property: 'og:title',
+          content: 'About'
+        },
+        {
           hid: 'description',
           name: 'description',
+          content: 'Read more about the Suggestions bot and how it came to be.'
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
           content: 'Read more about the Suggestions bot and how it came to be.'
         }
       ]

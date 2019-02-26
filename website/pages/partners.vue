@@ -41,8 +41,18 @@ export default {
       title: 'Partners',
       meta: [
         {
+          hid: 'og:title',
+          property: 'og:title',
+          content: 'Partners'
+        },
+        {
           hid: 'description',
           name: 'description',
+          content: 'View partners of the Suggestions bot and Nerd Cave Development.'
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
           content: 'View partners of the Suggestions bot and Nerd Cave Development.'
         }
       ]

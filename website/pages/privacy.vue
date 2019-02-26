@@ -105,12 +105,22 @@ export default {
   name: 'Privacy',
   head() {
     return {
-      title: 'Privacy',
+      title: 'Privacy Policy',
       meta: [
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: 'Privacy Policy'
+        },
         {
           hid: 'description',
           name: 'description',
-          content: 'View the Privacy Policy for the Suggestion\'s bot.'
+          content: 'View the Privacy Policy for the Suggestions bot.'
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: 'View the Privacy Policy for the Suggestions bot.'
         }
       ]
     }

@@ -43,10 +43,20 @@ export default {
       title: 'Home',
       meta: [
         {
-          hid: 'description',
-          name: 'description',
-          content: 'The only suggestions bot you\'ll ever need. Simple usage and management of suggestions for public and staff use.'
+          hid: 'og:title',
+          property: 'og:title',
+          content: 'Home'
         }
+        // {
+        //   hid: 'description',
+        //   name: 'description',
+        //   content: 'Get the most of the Suggestions bot in your server with a powerful feature set.'
+        // },
+        // {
+        //   hid: 'og:description',
+        //   property: 'og:description',
+        //   content: 'Get the most of the Suggestions bot in your server with a powerful feature set.'
+        // }
       ]
     }
   },

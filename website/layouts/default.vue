@@ -14,18 +14,10 @@ export default {
   name: 'Default',
   head() {
     return {
-      // title: 'Suggestions',
-      // titleTemplate: '%s | Suggestions',
-      // meta: [
-      //   {
-      //     name: 'theme-color',
-      //     content: '#dd9323'
-      //   },
-      //   {
-      //     property: 'og:image',
-      //     content: '/static/logo.png'
-      //   }
-      // ],
+      meta: [
+        { hid: 'og:site_name', property: 'og:site_name', content: 'Suggestions' },
+        { hid: 'og:type', property: 'og:type', content: 'Suggestions' }
+      ],
       link: [
         {
           rel: 'stylesheet',
@@ -44,8 +36,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-@import '@/assets/scss/_variables.scss';
-@import '@/assets/scss/styles.scss';
-</style>

@@ -94,9 +94,19 @@ export default {
       title: 'Terms of Service',
       meta: [
         {
+          hid: 'og:title',
+          property: 'og:title',
+          content: 'Terms of Service'
+        },
+        {
           hid: 'description',
           name: 'description',
-          content: 'View the Terms of Service for the Suggestion\'s bot.'
+          content: 'View the Terms of Service for the Suggestions bot.'
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: 'View the Terms of Service for the Suggestions bot.'
         }
       ]
     };
