@@ -108,6 +108,7 @@ export default {
       title: 'Privacy',
       meta: [
         {
+          hid: 'description',
           name: 'description',
           content: 'View the Privacy Policy for the Suggestion\'s bot.'
         }

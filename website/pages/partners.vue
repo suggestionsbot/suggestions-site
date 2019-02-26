@@ -41,6 +41,7 @@ export default {
       title: 'Partners',
       meta: [
         {
+          hid: 'description',
           name: 'description',
           content: 'View partners of the Suggestions bot and Nerd Cave Development.'
         }

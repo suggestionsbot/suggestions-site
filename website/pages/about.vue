@@ -35,6 +35,7 @@ export default {
       title: 'About',
       meta: [
         {
+          hid: 'description',
           name: 'description',
           content: 'Read more about the Suggestions bot and how it came to be.'
         }

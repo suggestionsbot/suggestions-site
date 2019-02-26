@@ -94,6 +94,7 @@ export default {
       title: 'Terms of Service',
       meta: [
         {
+          hid: 'description',
           name: 'description',
           content: 'View the Terms of Service for the Suggestion\'s bot.'
         }

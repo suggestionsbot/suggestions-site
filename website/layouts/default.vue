@@ -14,18 +14,18 @@ export default {
   name: 'Default',
   head() {
     return {
-      title: 'Suggestions',
-      titleTemplate: '%s | Suggestions',
-      meta: [
-        {
-          name: 'theme-color',
-          content: '#dd9323'
-        },
-        {
-          property: 'og:image',
-          content: '/static/logo.png'
-        }
-      ],
+      // title: 'Suggestions',
+      // titleTemplate: '%s | Suggestions',
+      // meta: [
+      //   {
+      //     name: 'theme-color',
+      //     content: '#dd9323'
+      //   },
+      //   {
+      //     property: 'og:image',
+      //     content: '/static/logo.png'
+      //   }
+      // ],
       link: [
         {
           rel: 'stylesheet',

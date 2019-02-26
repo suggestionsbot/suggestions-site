@@ -117,7 +117,7 @@
               roles
               to creating a staff-only suggestions channel. Check it out below!
             </p>
-            <a :href=docs target="_blank" class="button is-success">Click me!</a>
+            <a :href=docs target="_blank" class="button is-success">{{ docButton }}</a>
           </div>
         </article>
 
@@ -146,6 +146,7 @@ export default {
       title: 'Features',
       meta: [
         {
+          hid: 'description',
           name: 'description',
           content: 'Get the moust of the Suggestions bot in your server with a powerful feature set.'
         }
@@ -165,6 +166,12 @@ export default {
         suggestionMemberStats: require('../static/homepage-memberStats.png')
       }
     };
+  },
+  computed: {
+    docButton: function () {
+      if (this.$device.isDesktop) return 'Click me!';
+      else return 'Tap me!';
+    }
   }
 }
 </script>

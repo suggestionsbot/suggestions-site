@@ -6,35 +6,45 @@ module.exports = {
     host: '0.0.0.0'
   },
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
+    title: 'Suggestions',
+    titleTemplate: '%s | Suggestions',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'keywords', content: 'suggestions bot, discord suggestions bot, suggestions discord' },
+      { hid: 'description', name: 'description', content: 'The only suggestions bot you\'ll ever need. Simple usage and management of suggestions for public and staff use.' },
+      { name: 'theme-color', content: '#dd9323' },
+      { property: 'og:image', content: '/static/logo.png' }
+    ]
   },
 
   /*
-  ** Customize the progress-bar color
-  */
-  loading: { color: '#dd9323' },
+   ** Customize the progress-bar color
+   */
+  loading: {
+    color: '#dd9323'
+  },
 
   /*
-  ** Global CSS
-  */
-  css: [
-  ],
+   ** Global CSS
+   */
+  css: [],
   styleResources: {
     scss: [
       'assets/scss/_variables.scss'
     ]
   },
   /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-  ],
+   ** Plugins to load before mounting the App
+   */
+  plugins: [],
 
   /*
-  ** Nuxt.js modules
-  */
+   ** Nuxt.js modules
+   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
@@ -46,8 +56,8 @@ module.exports = {
     'nuxt-device-detect'
   ],
   /*
-  ** Axios module configuration
-  */
+   ** Axios module configuration
+   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
@@ -56,8 +66,8 @@ module.exports = {
     mode: 'history'
   },
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     postcss: {
       preset: {
@@ -67,8 +77,8 @@ module.exports = {
       }
     },
     /*
-    ** You can extend webpack config here
-    */
+     ** You can extend webpack config here
+     */
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
