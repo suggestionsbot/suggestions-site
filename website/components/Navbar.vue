@@ -16,6 +16,7 @@
       <div id="navbarBasicExample" class="navbar-menu" :class="{ 'is-active': showNav }">
         <div class="navbar-start" v-for="(link, index) in mainLinks" :key="index">
           <a :href=link.link target="_blank" class="navbar-item" v-if="link.external"><strong>{{ link.name }}</strong></a>
+          <a :href=link.link target="_blank" class="navbar-item" v-else-if="link.external && link.fa.active"><i :class="link.fa.icon"></i></a>
           <a :href=link.link class="navbar-item" v-else><strong>{{ link.name }}</strong></a>
         </div>
 
@@ -43,7 +44,6 @@
 </template>
 
 <script>
-// Navbar comment to fix renamed component
 export default {
   name: 'NavBar',
   data: function () {
@@ -52,46 +52,60 @@ export default {
       navbarLogo: require('../static/navbar-logo.png'),
       mainLinks: [
         {
-          name: 'Home',
-          link: '/'
+          name: 'About',
+          link: '/about',
+          external: false,
+          fa: {
+            active: false
+          }
         },
         {
-          name: 'About',
-          link: '/about'
+          name: 'Features',
+          link: '/features',
+          external: false,
+          fa: {
+            active: false
+          }
         },
         {
           name: 'Documentation',
           link: 'https://docs.suggestionsbot.com',
-          external: true
+          external: true,
+          fa: {
+            active: false
+          }
         },
         {
           name: 'Discord',
           link: 'https://discord.gg/g7wr8xb',
-          external: true
+          external: true,
+          fa: {
+            active: true,
+            icon: 'fab fa-discord'
+          }
         },
         {
           name: 'Patreon',
           link: 'https://patreon.com/acollierr17',
-          external: true
-        },
-        {
-          name: 'Partners',
-          link: '/partners'
+          external: true,
+          fa: {
+            active: true,
+            icon: 'fab fa-patreon'
+          }
         }
       ],
       moreLinks: [
         {
-          name: 'Terms of Service',
-          link: '/terms'
+          name: 'Partners',
+          link: '/partners'
         },
         {
           name: 'Privacy Policy',
           link: '/privacy'
         },
         {
-          name: 'Contact',
-          link: 'https://discord.gg/g7wr8xb',
-          external: true
+          name: 'Terms of Service',
+          link: '/terms'
         }
       ]
     };
