@@ -16,7 +16,8 @@ export default {
     return {
       meta: [
         { hid: 'og:site_name', property: 'og:site_name', content: 'Suggestions' },
-        { hid: 'og:type', property: 'og:type', content: 'Suggestions' }
+        { hid: 'og:type', property: 'og:type', content: 'Suggestions' },
+        { property: 'og:image', content: require('../static/logo.png') }
       ],
       link: [
         {
