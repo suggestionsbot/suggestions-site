@@ -70,7 +70,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 $card-background-color: #2e3131;
 
 @import '~bulma/bulma.sass';

@@ -132,9 +132,9 @@
         </article>
 
         <article class="message">
-          <class class="message-header is-primary">
+          <div class="message-header is-primary">
             <p>❗ Get Started</p>
-          </class>
+          </div>
           <div class="message-body">
             <p>What are you waiting for? Like what you see? Start below!</p>
             <a :href=botInvite class="button is-link">
@@ -151,6 +151,7 @@
 
 <script>
 export default {
+  name: 'Home',
   head() {
     return {
       title: 'Home',
@@ -175,14 +176,11 @@ export default {
         suggestionMemberStats: require('../static/homepage-memberStats.png')
       }
     };
-  },
-  components: {
-
   }
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #homeContainer, #featuresContainer {
     text-align: center;
     margin-top: 60px;

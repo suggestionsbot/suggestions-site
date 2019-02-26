@@ -80,7 +80,7 @@
         <h2 class="subtitle is-4">Contact Us</h2>
 
         <p>If you have any questions about the Terms of Service, please <a :href=contactLink target="_blank">contact
-            us</a>.</p>
+          us</a>.</p>
       </div>
     </section>
   </div>
@@ -108,7 +108,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .container {
     max-width: 750px;
 
