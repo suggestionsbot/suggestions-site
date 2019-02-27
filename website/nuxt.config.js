@@ -62,16 +62,17 @@ module.exports = {
     '@nuxtjs/style-resources',
     'nuxt-device-detect',
     '@nuxtjs/dotenv',
-    '@nuxtjs/google-analytics', {
-      id: 'UA-135304839-1',
-      dev: false
-    }
+    '@nuxtjs/google-analytics'
   ],
   /*
    ** Axios module configuration
    */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+  },
+  googleAnalytics: {
+    id: 'UA-135304839-1',
+    dev: false
   },
 
   route: {
