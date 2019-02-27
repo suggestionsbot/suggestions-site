@@ -1,7 +1,14 @@
+require('dotenv').config();
+
 module.exports = {
   mode: 'universal',
+  // server: {
+  //   host: process.env.NUXT_HOST || 'localhost',
+  //   port: process.env.NUXT_PORT || 3000
+  // },
   server: {
-    host: '0.0.0.0'
+    host: process.env.NODE_ENV === 'production' ? process.env.NUXT_HOST : 'localhost',
+    port: process.env.NODE_ENV === 'production' ? process.env.NUXT_PORT : 3000
   },
   /*
    ** Headers of the page
@@ -53,7 +60,8 @@ module.exports = {
     '@nuxtjs/pwa',
     'nuxt-sass-resources-loader',
     '@nuxtjs/style-resources',
-    'nuxt-device-detect'
+    'nuxt-device-detect',
+    '@nuxtjs/dotenv'
   ],
   /*
    ** Axios module configuration
