@@ -24,14 +24,13 @@ test:
   stage: test
   only:
     - development
-    - nuxt
   script:
     - echo "Run tests in this section"
-    - docker login -u $GL_REG_USER -p $GL_REG_TOKEN $GL_REGISTRY
-    - docker build -t $GL_REG_TEST .
-    - docker push $GL_REG_TEST
-    - ssh -t -t $SSH_LOGIN "cd /root/suggestions-test && docker-compose pull && docker-compose down && docker-compose up -d"
-    - echo "Container registry log in successful"
+    # - docker login -u $GL_REG_USER -p $GL_REG_TOKEN $GL_REGISTRY
+    # - docker build -t $GL_REG_TEST .
+    # - docker push $GL_REG_TEST
+    # - ssh -t -t $SSH_LOGIN "cd /root/suggestions-test && docker-compose pull && docker-compose down && docker-compose up -d"
+    # - echo "Container registry log in successful"
 
 deploy:
   stage: deploy
