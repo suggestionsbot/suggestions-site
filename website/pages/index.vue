@@ -47,16 +47,6 @@ export default {
           property: 'og:title',
           content: 'Home'
         }
-        // {
-        //   hid: 'description',
-        //   name: 'description',
-        //   content: 'Get the most of the Suggestions bot in your server with a powerful feature set.'
-        // },
-        // {
-        //   hid: 'og:description',
-        //   property: 'og:description',
-        //   content: 'Get the most of the Suggestions bot in your server with a powerful feature set.'
-        // }
       ]
     }
   },

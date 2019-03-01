@@ -32,9 +32,17 @@
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
-              <a class="button is-primary" disabled>
+              <a href="/login" class="button is-primary" v-if="!userState">
                 <i class="fab fa-discord"></i> Login
               </a>
+              <div class="authenticated" v-else>
+                <a href="/manage" class="button is-success">
+                  Manage
+                </a>
+                <a href="/logout" class="button">
+                  Logout
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -48,6 +56,7 @@ export default {
   name: 'NavBar',
   data: function () {
     return {
+      userState: this.$store.state.authUser,
       showNav: false,
       navbarLogo: require('../static/navbar-logo.png'),
       mainLinks: [
