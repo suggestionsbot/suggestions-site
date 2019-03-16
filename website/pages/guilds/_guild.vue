@@ -57,9 +57,6 @@
 </template>
 
 <script>
-import dotenv from 'dotenv';
-dotenv.config();
-
 export default {
   name: 'Guild',
   middleware: 'auth',
@@ -112,9 +109,7 @@ export default {
     }
   },
   async asyncData({ $axios, params }) {
-    const url = process.env.NODE_ENV === 'production' ? `suggestionsbot.com` : `http://${process.env.NUXT_HOST}:${process.env.NUXT_PORT}`;
-
-    const { data } = await $axios.get(`${url}/client/guilds/${params.guild}`);
+    const { data } = await $axios.get(`/client/guilds/${params.guild}`);
     return { guildData: data };
   }
 }
