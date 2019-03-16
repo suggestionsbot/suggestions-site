@@ -109,7 +109,12 @@ export default {
     }
   },
   async asyncData({ $axios, params }) {
-    const { data } = await $axios.get(`/client/guilds/${params.guild}`);
+    const { data } = await $axios.get(`/client/guilds`, {
+      proxy: {
+        host: process.env.NUXT_HOST,
+        port: process.env.NUXT_PORT
+      }
+    });
     return { guildData: data };
   }
 }
