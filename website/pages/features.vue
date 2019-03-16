@@ -78,8 +78,8 @@
           <div class="message-body">
             <p>Over the past several months, the Suggestions bot has been collecting statistics of different areas of
               the bot.
-              And don't worry. Your information is secured! Check out the <a href="/privacy" target="_blank">Privacy
-                Policy</a> for more information.
+              And don't worry. Your information is secured! Check out the <n-link to="/privacy" target="_blank">Privacy
+                Policy</n-link> for more information.
 
               Information such as how many suggestions have been submitted, approved, rejected,
               etc. is tracked and
@@ -127,10 +127,10 @@
           </div>
           <div class="message-body">
             <p>What are you waiting for? Like what you see? Start below! Want to see more commands? Check out the documentation!</p>
-            <a :href=botInvite class="button is-link">
+            <n-link to="/invite" class="button is-link" target="_blank">
               <i class="fab fa-discord"></i>
               <p><strong>Add the Suggestions Bot</strong></p>
-            </a>
+            </n-link>
           </div>
         </article>
       </div>
@@ -165,7 +165,6 @@ export default {
   },
   data() {
     return {
-      botInvite: 'https://discordapp.com/oauth2/authorize?client_id=474051954998509571&scope=bot&permissions=93248',
       docs: 'https://docs.suggestionsbot.com',
       images: {
         voteEmojis: require('../static/homepage-voteEmojis.png'),

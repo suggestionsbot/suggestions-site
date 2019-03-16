@@ -2,12 +2,8 @@ require('dotenv').config();
 
 module.exports = {
   mode: 'universal',
-  // server: {
-  //   host: process.env.NUXT_HOST || 'localhost',
-  //   port: process.env.NUXT_PORT || 3000
-  // },
   server: {
-    host: process.env.NODE_ENV === 'production' ? process.env.NUXT_HOST : 'localhost',
+    host: process.env.NODE_ENV === 'production' ? process.env.NUXT_HOST : '0.0.0.0',
     port: process.env.NODE_ENV === 'production' ? process.env.NUXT_PORT : 3000
   },
   /*
@@ -25,7 +21,6 @@ module.exports = {
       { name: 'theme-color', content: '#dd9323' }
     ]
   },
-
   /*
    ** Customize the progress-bar color
    */
