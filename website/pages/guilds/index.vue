@@ -98,7 +98,7 @@ export default {
     }
   },
   async asyncData({ $axios }) {
-    const url = process.env.NODE_ENV === 'production' ? `https://suggestionsbot.com` : `http://${process.env.NUXT_HOST}:${process.env.NUXT_PORT}`;
+    const url = process.env.NODE_ENV === 'production' ? `https://suggestionsbot.com:${process.env.NUXT_PORT}` : `http://${process.env.NUXT_HOST}:${process.env.NUXT_PORT}`;
 
     const { data } = await $axios.get(`${url}/client/guilds`);
     return { userGuilds: data };
