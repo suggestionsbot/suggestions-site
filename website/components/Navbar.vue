@@ -36,8 +36,8 @@
                 <i class="fab fa-discord"></i> Login
               </a>
               <div class="authenticated" v-else>
-                <a href="/manage" class="button is-success">
-                  Manage
+                <a href="/guilds" class="button is-success">
+                  Profile
                 </a>
                 <a href="/logout" class="button">
                   Logout
@@ -86,7 +86,7 @@ export default {
         },
         {
           name: 'Discord',
-          link: 'https://discord.gg/g7wr8xb',
+          link: '/contact',
           external: true,
           fa: {
             active: true,

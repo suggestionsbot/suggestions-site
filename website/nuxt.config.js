@@ -21,7 +21,6 @@ module.exports = {
       { name: 'theme-color', content: '#dd9323' }
     ]
   },
-
   /*
    ** Customize the progress-bar color
    */

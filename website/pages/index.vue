@@ -9,19 +9,19 @@
           use.
         </h2>
         <div class="homePageButtons">
-          <a :href=botInvite class="button is-medium is-link">
+          <n-link to="/invite" class="button is-medium is-link" target="_blank">
             <span class="icon is-medium">
               <i class="fab fa-discord"></i>
             </span>
             <p><strong>Add to Discord</strong></p>
-          </a>
+          </n-link>
 
-          <a href="/features" class="button is-medium is-info">
+          <n-link to="/features" class="button is-medium is-info">
             <span class="icon is-medium">
               <i class="fas fa-info-circle"></i>
             </span>
             <p>Learn More</p>
-          </a>
+          </n-link>
 
           <a :href=docCommands class="button is-medium is-success">
             <span class="icon is-medium">
@@ -52,7 +52,6 @@ export default {
   },
   data() {
     return {
-      botInvite: 'https://discordapp.com/oauth2/authorize?client_id=474051954998509571&scope=bot&permissions=93248',
       docCommands: 'https://docs.suggestionsbot.com/docs/commands.html',
       images: {
         logo: require('../static/logo.png')

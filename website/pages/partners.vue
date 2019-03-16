@@ -6,7 +6,7 @@
 
         <p>Check out our partners of the Suggestions bot and Nerd Cave Development!</p>
 
-        <p>Want to become a partner? Join our <a href="${this.supportDiscord}">Support Discord</a> today and speak with
+        <p>Want to become a partner? Join our <a :href=supportDiscord>Support Discord</a> today and speak with
           <strong>anthony#8577</strong> for partnership inquiries.</p>
       </div>
     </section>

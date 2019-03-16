@@ -17,7 +17,7 @@ router.get('/logout', (req, res) => {
 router.get('/callback', passport.authenticate('discord', {
   failureRedirect: '/'
 }), (req, res) => {
-  res.redirect('/manage');
+  res.redirect('/guilds');
 });
 
 module.exports = router;

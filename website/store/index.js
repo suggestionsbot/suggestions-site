@@ -1,16 +1,12 @@
 import axios from 'axios';
 
 export const state = () => ({
-  authUser: null,
-  counter: 0
+  authUser: null
 });
 
 export const mutations = {
   SET_USER: function (state, user) {
     state.authUser = user;
-  },
-  increment: function (state) {
-    state.counter++;
   }
 };
 

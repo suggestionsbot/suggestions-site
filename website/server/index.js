@@ -17,6 +17,7 @@ require('dotenv').config();
 const config = require('../nuxt.config.js');
 const { db, dbOptions } = require('./config');
 const api = require('./api');
+const discord = require('./discord');
 
 const app = express();
 
@@ -45,6 +46,8 @@ mongoose.connection.on('disconnected', () => {
 
 const dbConnection = mongoose.connection;
 
+discord.login(process.env.NUXT_DISCORD_CLIENT_TOKEN);
+
 app.use(session({
   genid: (req) => {
     return uuid();
@@ -53,7 +56,7 @@ app.use(session({
   secret: process.env.NUXT_DISCORD_SECRET_NAME,
   resave: false,
   saveUninitialized: false,
-  cookie: { maxAge: 60000 },
+  cookie: { maxAge: 12000000 },
   store: new MongoStore({ mongooseConnection: dbConnection })
 }));
 app.use(passport.initialize());

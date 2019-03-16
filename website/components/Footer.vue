@@ -28,7 +28,7 @@ export default {
         },
         {
           name: 'Contact',
-          url: 'https://discord.gg/g7wr8xb',
+          url: '/contact',
           external: true
         }
       ]
