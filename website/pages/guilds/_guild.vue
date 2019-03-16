@@ -109,7 +109,7 @@ export default {
     }
   },
   async asyncData({ $axios, params }) {
-    const { data } = await $axios.get(`/client/guilds`, {
+    const { data } = await $axios.get(`/client/guilds/${params.guild}`, {
       proxy: {
         host: process.env.NUXT_HOST,
         port: process.env.NUXT_PORT
