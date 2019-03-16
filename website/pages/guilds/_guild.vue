@@ -109,7 +109,9 @@ export default {
     }
   },
   async asyncData({ $axios, params }) {
-    const { data } = await $axios.get(`http://localhost:3000/client/guilds/${params.guild}`);
+    const url = process.env.NODE_ENV === 'production' ? `https://suggestionsbot.com` : `http://${process.env.NUXT_HOST}:${process.env.NUXT_PORT}`;
+
+    const { data } = await $axios.get(`${url}/client/guilds/${params.guild}`);
     return { guildData: data };
   }
 }
