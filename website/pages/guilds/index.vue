@@ -42,7 +42,7 @@
                   <div class="media-content">
                     <p class="title is-4">{{ guild.name }}</p>
                     <n-link to="/invite" alt="Suggetions bot invite link" target="_blank" class="button is-link" v-if="!guild.available">Invite</n-link>
-                    <n-link :to="`/guilds/${guild.id}`" class="button is-dark" v-else>View More</n-link>
+                    <n-link :to="{ name: 'guilds-guild', params: { guild: guild.id } }" class="button is-dark" v-else>View More</n-link>
                   </div>
                 </div>
               </div>
