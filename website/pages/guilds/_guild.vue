@@ -3,7 +3,7 @@
     <div class="container">
       <article class="message is-warning">
         <div class="message-body">
-          The dashboard is still a work in progress! Some features may be disabled. Please join the <n-link to="/contact" target="_blank">Support
+          The dashboard is still a work in progress! Some features may be disabled or overall buggy. Please join the <n-link to="/contact" target="_blank">Support
             Discord</n-link> for updates.
         </div>
       </article>
