@@ -31,6 +31,7 @@
       <div id="userGuilds">
         <section class="section partners">
           <!-- <div class="container" v-for="(guild, index) in userGuilds" :key="index"> -->
+          <div class="container">
           <div class="card">
             <div class="card-content">
               <div class="media">
@@ -50,7 +51,7 @@
               </div>
             </div>
           </div>
-          <!-- </div> -->
+          </div>
         </section>
       </div>
     </section>
