@@ -11,8 +11,8 @@
         <div class="card-content">
           <div class="media">
             <div class="media-left">
-              <figure class="image is-96x96" id="discordAvatar">
-                <img :src=currentGuild.icon :alt="`${currentGuild.guildName}'s avatar`" v-if="currentUser.avatarCheck">
+              <figure class="image is-96x96" id="discordIcon">
+                <img :src=currentGuild.icon :alt="`${currentGuild.guildName}'s icon`" v-if="currentUser.avatarCheck">
                 <img :src=defaultIcon :alt="`${currentGuild.guildName}'s icon`" v-else>
               </figure>
             </div>
@@ -30,25 +30,25 @@
         <div class="level-item has-text-centered">
           <div>
             <p class="heading">Members</p>
-            <p class="title">{{ guildData.memberCount.toLocaleString() }}</p>
+            <p class="title">{{ guildDataNew.memberCount }}</p>
           </div>
         </div>
         <div class="level-item has-text-centered">
           <div>
             <p class="heading">Text Channels</p>
-            <p class="title">{{ guildData.textChannels }}</p>
+            <p class="title">{{ guildDataNew.textChannels }}</p>
           </div>
         </div>
         <div class="level-item has-text-centered">
           <div>
             <p class="heading">Voice Channels</p>
-            <p class="title">{{ guildData.voiceChannels }}</p>
+            <p class="title">{{ guildDataNew.voiceChannels }}</p>
           </div>
         </div>
         <div class="level-item has-text-centered">
           <div>
             <p class="heading">Category Channels</p>
-            <p class="title">{{ guildData.categoryChannels }}</p>
+            <p class="title">{{ guildDataNew.categoryChannels }}</p>
           </div>
         </div>
       </nav>
@@ -85,8 +85,14 @@ export default {
   components: {},
   data() {
     return {
-      guildData: {},
-      defaultIcon: require('../../static/nerd-cave-development.png')
+      // guildData: {},
+      defaultIcon: require('../../static/nerd-cave-development.png'),
+      guildDataNew: {},
+      guildData: {
+        id: 1,
+        icon: require('../../static/nerd-cave-development.png'),
+        name: 'Nerd Cave Development'
+      }
     };
   },
   computed: {
@@ -104,7 +110,9 @@ export default {
         guildName: this.guildData.name,
         id: this.guildData.id,
         iconCheck: this.guildData.icon,
-        icon: `https://cdn.discordapp.com/icons/${this.guildData.id}/${this.guildData.icon}.png`
+        icon: this.guildData.icon,
+        stats: this.guildDataNew
+        // icon: `https://cdn.discordapp.com/icons/${this.guildData.id}/${this.guildData.icon}.png`
       };
     }
   },
@@ -115,7 +123,7 @@ export default {
         port: process.env.NUXT_PORT
       }
     });
-    return { guildData: data };
+    return { guildDataNew: data };
   }
 }
 </script>
