@@ -4,7 +4,8 @@
       <div class="container userCard">
         <article class="message is-warning">
           <div class="message-body">
-            The dashboard is still a work in progress! Some features may be disabled or overall buggy. Please join the <n-link to="/contact" target="_blank">Support
+            The dashboard is still a work in progress! Some features may be disabled or overall buggy. Please join the
+            <n-link to="/contact" target="_blank">Support
               Discord</n-link> for updates.
           </div>
         </article>
@@ -29,25 +30,27 @@
       </div>
       <div id="userGuilds">
         <section class="section partners">
-          <div class="container" v-for="(guild, index) in userGuilds" :key="index">
-            <div class="card">
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-128x128">
-                      <img :src="`https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.png`" :alt="`${guild.name}'s icon`" v-if="guild.icon">
-                      <img :src=defaultIcon :alt="`${guild.name}'s icon`" v-else>
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <p class="title is-4">{{ guild.name }}</p>
-                    <n-link to="/invite" alt="Suggetions bot invite link" target="_blank" class="button is-link" v-if="!guild.available">Invite</n-link>
-                    <n-link :to="{ name: 'guilds-guild', params: { guild: guild.id } }" class="button is-dark" v-else>View More</n-link>
-                  </div>
+          <!-- <div class="container" v-for="(guild, index) in userGuilds" :key="index"> -->
+          <div class="card">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-128x128">
+                    <!-- <img :src="`https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.png`" :alt="`${guild.name}'s icon`" v-if="guild.icon"> -->
+                    <!-- <img :src=defaultIcon :alt="`${guild.name}'s icon`" v-else> -->
+                    <img :src=guild.icon :alt="`${guild.name}'s icon`">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">{{ guild.name }}</p>
+                  <!-- <n-link to="/invite" alt="Suggetions bot invite link" target="_blank" class="button is-link" v-if="!guild.available">Invite</n-link> -->
+                  <!-- <n-link :to="{ name: 'guilds-guild', params: { guild: guild.id } }" class="button is-dark" v-else>View More</n-link> -->
+                  <n-link :to="{ name: 'guilds-guild', params: { guild: guild.id } }" class="button is-dark">View More</n-link>
                 </div>
               </div>
             </div>
           </div>
+          <!-- </div> -->
         </section>
       </div>
     </section>
@@ -83,7 +86,12 @@ export default {
   data() {
     return {
       defaultIcon: require('../../static/nerd-cave-development.png'),
-      userGuilds: []
+      // userGuilds: [],
+      guild: {
+        id: 1,
+        icon: require('../../static/nerd-cave-development.png'),
+        name: 'Nerd Cave Development'
+      }
     };
   },
   computed: {
@@ -96,16 +104,16 @@ export default {
         avatar: `https://cdn.discordapp.com/avatars/${authUser.id}/${authUser.avatar}.png`
       };
     }
-  },
-  async asyncData({ $axios }) {
-    const { data } = await $axios.get(`/client/guilds`, {
-      proxy: {
-        host: process.env.NUXT_HOST,
-        port: process.env.NUXT_PORT
-      }
-    });
-    return { userGuilds: data };
   }
+  // async asyncData({ $axios }) {
+  //   const { data } = await $axios.get(`/client/guilds`, {
+  //     proxy: {
+  //       host: process.env.NUXT_HOST,
+  //       port: process.env.NUXT_PORT
+  //     }
+  //   });
+  //   return { userGuilds: data };
+  // }
 }
 </script>
 

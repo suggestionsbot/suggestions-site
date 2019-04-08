@@ -17,7 +17,6 @@ require('dotenv').config();
 const config = require('../nuxt.config.js');
 const { db, dbOptions } = require('./config');
 const api = require('./api');
-const discord = require('./discord');
 
 const app = express();
 
@@ -45,8 +44,6 @@ mongoose.connection.on('disconnected', () => {
 });
 
 const dbConnection = mongoose.connection;
-
-discord.login(process.env.NUXT_DISCORD_CLIENT_TOKEN);
 
 app.use(session({
   genid: (req) => {
