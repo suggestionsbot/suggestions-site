@@ -47,23 +47,24 @@
           <div class="message-body">
             <p>With the Suggestions bot, we try to unpack features that allow you as a server owner or administrator to
               customize features of the bot you and your community's liking. Keep reading for some examples of what
-              can be customized.
+              can be customized via the <code>config</code> command.
             </p>
 
-            <p>Want to change what emojis are added to suggestions? Us too, sometimes. Simply use the <code>setvotes</code>
-              command to do that!</p>
+            <p>Want to change what emojis are added to suggestions? Us too, sometimes. Simply use the <code>config emojis</code>
+              option to do that!</p>
             <figure>
               <img :src=images.voteEmojis alt="Emoji sets">
               <figcaption class="caption">Various emoji sets to choose from.</figcaption>
             </figure>
 
             <p>What about the prefix? Or the suggestions channel? Don't worry. We have that covered 👍. You can use
-              commands like <code>setprefix</code> and <code>setchannel</code> to do that.
+              config options like <code>config prefix</code> and <code>config channel</code> to do that.
 
               And there's one more thing... you can add/remove any roles you want to manage suggestions. Check out
-              the <code>role</code> command as well as the <code>roles</code> command if you want to view who can
-              manage suggestions.
+              the <code>config roles</code> options to configure and see who can manage suggestions.
             </p>
+
+            <p>Every possible configuration option is fully documented via our <a :href=docs target="_blank">documentation website</a>!</p>
             <figure>
               <img :src=images.suggestionRoles alt="Suggestions bot roles and admins">
               <figcaption class="caption">Suggestions bot roles and admins in a guild.</figcaption>
@@ -167,12 +168,12 @@ export default {
     return {
       docs: 'https://docs.suggestionsbot.com',
       images: {
-        voteEmojis: require('../static/homepage-voteEmojis.png'),
-        suggestionNotes: require('../static/homepage-suggestionNotes.png'),
-        suggestionApproved: require('../static/homepage-approvedSuggestion.png'),
-        suggestionRoles: require('../static/homepage-suggestionRoles.png'),
-        suggestionServerStats: require('../static/homepage-serverStats.png'),
-        suggestionMemberStats: require('../static/homepage-memberStats.png')
+        voteEmojis: require('../static/featuresPage-voteEmojis.png'),
+        suggestionNotes: require('../static/featuresPage-suggestionNotes.png'),
+        suggestionApproved: require('../static/featuresPage-approvedSuggestion.png'),
+        suggestionRoles: require('../static/featuresPage-suggestionRoles.png'),
+        suggestionServerStats: require('../static/featuresPage-serverStats.png'),
+        suggestionMemberStats: require('../static/featuresPage-memberStats.png')
       }
     };
   },
