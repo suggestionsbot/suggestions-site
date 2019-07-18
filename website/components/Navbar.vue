@@ -104,10 +104,10 @@ export default {
         }
       ],
       moreLinks: [
-        {
-          name: 'Partners',
-          link: '/partners'
-        },
+        // {
+        //   name: 'Partners',
+        //   link: '/partners'
+        // },
         {
           name: 'Privacy Policy',
           link: '/privacy'
