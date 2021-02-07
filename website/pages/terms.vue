@@ -113,7 +113,7 @@ export default {
   },
   data() {
     return {
-      contactLink: 'mailto:contact@thenerdcave.us'
+      contactLink: 'mailto:hello@suggestions.gg'
     };
   }
 }

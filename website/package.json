@@ -2,7 +2,7 @@
   "name": "website",
   "version": "1.0.0",
   "description": "The official website for the Suggestions bot.",
-  "author": "acollierr17",
+  "author": "Anthony Collier <hello@acollier.dev>",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
