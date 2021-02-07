@@ -15,8 +15,8 @@ export default {
     return {
       links: [
         {
-          name: '© 2019 Nerd Cave Development',
-          url: 'https://thenerdcave.us'
+          name: '© 2021 Anthony Collier',
+          url: 'https://acollier.dev'
         },
         {
           name: 'Privacy Policy',
