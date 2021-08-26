@@ -4,11 +4,11 @@ const session = require('express-session');
 const consola = require('consola');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
-const passport = require('passport');
-const refresh = require('passport-oauth2-refresh');
+// const passport = require('passport');
+// const refresh = require('passport-oauth2-refresh');
 const mongoose = require('mongoose');
 const MongoStore = require('connect-mongo')(session);
-const uuid = require('uuid');
+// const uuid = require('uuid');
 const cors = require('cors');
 const helmet = require('helmet');
 const { Nuxt, Builder } = require('nuxt');
@@ -16,7 +16,7 @@ require('dotenv').config();
 
 const config = require('../nuxt.config.js');
 const { db, dbOptions } = require('./config');
-const api = require('./api');
+// const api = require('./api');
 
 const app = express();
 
@@ -45,21 +45,21 @@ mongoose.connection.on('disconnected', () => {
 
 const dbConnection = mongoose.connection;
 
-app.use(session({
-  genid: (req) => {
-    return uuid();
-  },
-  name: process.env.NUXT_DISCORD_SECRET_NAME,
-  secret: process.env.NUXT_DISCORD_SECRET_NAME,
-  resave: false,
-  saveUninitialized: false,
-  cookie: { maxAge: 12000000 },
-  store: new MongoStore({ mongooseConnection: dbConnection })
-}));
-app.use(passport.initialize());
-app.use(passport.session());
+// app.use(session({
+//   genid: (req) => {
+//     return uuid();
+//   },
+//   name: process.env.NUXT_DISCORD_SECRET_NAME,
+//   secret: process.env.NUXT_DISCORD_SECRET_NAME,
+//   resave: false,
+//   saveUninitialized: false,
+//   cookie: { maxAge: 12000000 },
+//   store: new MongoStore({ mongooseConnection: dbConnection })
+// }));
+// app.use(passport.initialize());
+// app.use(passport.session());
 
-require('./auth_config')(passport, refresh);
+// require('./auth_config')(passport, refresh);
 
 async function start() {
   // Init Nuxt.js
@@ -78,7 +78,7 @@ async function start() {
     await nuxt.ready();
   }
 
-  app.use('/', api);
+  // app.use('/', api);
 
   // Give nuxt middleware to express
   app.use(nuxt.render);

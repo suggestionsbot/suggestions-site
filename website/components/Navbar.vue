@@ -28,24 +28,6 @@
             </div>
           </div>
         </div>
-
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a href="/login" class="button is-primary" v-if="!userState">
-                <i class="fab fa-discord"></i> Login
-              </a>
-              <div class="authenticated" v-else>
-                <a href="/guilds" class="button is-success">
-                  Profile
-                </a>
-                <a href="/logout" class="button">
-                  Logout
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </nav>
   </div>
