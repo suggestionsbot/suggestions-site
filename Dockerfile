@@ -1,20 +1,31 @@
-FROM node:latest
+FROM nikolaik/python-nodejs:python3.9-nodejs14-alpine  AS base
 
-# Create base directories
-RUN mkdir -p /usr/src/site
-RUN mkdir -p /usr/src/site/website
+# create working directory for website
+WORKDIR /opt/website
 
-# Install app dependencies
-WORKDIR /usr/src/site/website
-COPY website/package.json .
-RUN npm install --force --legacy-peer-deps
+### dependenices & builder
+FROM base AS builder
 
-# Copy rest of the files and build the server
-WORKDIR /usr/src/site
-COPY . /usr/src/site
+# install make
+RUN apk add g++ make
 
-WORKDIR /usr/src/site/website
-RUN npm run build
+# install production dependencies
+COPY website/package.json website/yarn.lock ./
 
-# Start the application
-CMD ["npm", "start"]
+RUN yarn install --force --legacy-peer-deps
+RUN cp -RL node_modules /tmp/node_modules
+
+### runner
+FROM base
+
+# copy runtime dependencies
+COPY --from=builder /tmp/node_modules node_modules
+
+# copy remaining files
+COPY website .
+
+# build the application
+RUN yarn build
+
+# start the application
+CMD ["yarn", "start"]
