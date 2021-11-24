@@ -1,0 +1,12 @@
+{
+  "redirects": [
+    {
+      "source": "/contact",
+      "destination": "https://suggestions.bot/discord"
+    },
+    {
+      "source": "/invite",
+      "destination": "https://suggestions.bot/invite"
+    }
+  ]
+}
