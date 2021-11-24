@@ -1,11 +1,13 @@
+// @ts-check
+
 require('dotenv').config();
 
+const metaDefaults = {
+  description: 'The only suggestions bot you\'ll ever need. Simple usage and management of suggestions for public and staff use.'
+}
+
 module.exports = {
-  mode: 'universal',
-  server: {
-    host: process.env.NODE_ENV === 'production' ? process.env.NUXT_HOST : '0.0.0.0',
-    port: process.env.NODE_ENV === 'production' ? process.env.NUXT_PORT : 3000
-  },
+  target: 'static',
   /*
    ** Headers of the page
    */
@@ -16,10 +18,32 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'keywords', content: 'suggestions bot, discord suggestions bot, suggestions discord' },
-      { hid: 'description', name: 'description', content: 'The only suggestions bot you\'ll ever need. Simple usage and management of suggestions for public and staff use.' },
-      { hid: 'og:description', property: 'og:description', content: 'The only suggestions bot you\'ll ever need. Simple usage and management of suggestions for public and staff use.' },
+      { hid: 'description', name: 'description', content: metaDefaults.description },
+      { hid: 'og:description', property: 'og:description', content: metaDefaults.description },
       { name: 'theme-color', content: '#dd9323' }
     ]
+  },
+  pwa: {
+    icon: {
+      fileName: 'logo.png'
+    },
+    meta: {
+      name: 'Suggestions',
+      description: metaDefaults.description,
+      theme_color: '#dd9323',
+      ogHost: process.env.NODE_ENV === 'production' ? 'https://suggestionsbot.com' : 'https://suggestionsdev.ngrok.io',
+      twiterCard: 'summary_large_image',
+      twitterSite: '@suggestions_bot',
+      twitterCreator: '@suggestions_bot'
+    },
+    manifest: {
+      name: 'Suggestions',
+      short_name: 'S',
+      description: metaDefaults.description,
+      lang: 'en',
+      backgroundColor: '#636e72',
+      useWebManifestExtension: true
+    }
   },
   /*
    ** Customize the progress-bar color
