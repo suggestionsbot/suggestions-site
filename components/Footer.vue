@@ -16,7 +16,8 @@ export default {
       links: [
         {
           name: '© 2021 Anthony Collier',
-          url: 'https://acollier.dev'
+          url: 'https://acollier.dev',
+          external: true
         },
         {
           name: 'Privacy Policy',
