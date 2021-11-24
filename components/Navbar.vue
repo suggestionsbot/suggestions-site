@@ -38,7 +38,6 @@ export default {
   name: 'NavBar',
   data () {
     return {
-      userState: this.$store.state.authUser,
       showNav: false,
       navbarLogo: require('../static/navbar-logo.png'),
       mainLinks: [
