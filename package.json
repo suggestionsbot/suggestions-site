@@ -14,27 +14,12 @@
     "precommit": "yarn lint"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.5.4",
     "@nuxtjs/bulma": "^1.2.4",
     "@nuxtjs/dotenv": "^1.3.0",
     "@nuxtjs/google-analytics": "^2.2.0",
     "@nuxtjs/pwa": "^3.3.5",
-    "bcrypt": "^5.0.1",
-    "body-parser": "^1.19.0",
-    "connect-mongo": "^4.5.0",
-    "cookie-parser": "^1.4.4",
-    "cors": "^2.8.5",
-    "cross-env": "^7.0.3",
-    "express": "^4.17.1",
-    "express-session": "^1.16.2",
-    "helmet": "^4.6.0",
-    "mongoose": "^6.0.2",
     "nuxt": "^2.8.1",
-    "nuxt-device-detect": "^1.1.5",
-    "passport": "^0.4.0",
-    "passport-discord": "^0.1.3",
-    "passport-oauth2-refresh": "^2.1.0",
-    "uuid": "^8.3.2"
+    "nuxt-device-detect": "^1.1.5"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^6.0.1",
