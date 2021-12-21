@@ -3,7 +3,7 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
-          <img :src=navbarLogo width="112" height="28">
+          <img alt="Suggestions bot logo" :src=navbarLogo width="112" height="28">
         </a>
 
         <a class="navbar-burger burger" @click="showNav = !showNav" :class="{ 'is-active': showNav }">
@@ -75,12 +75,12 @@ export default {
           }
         },
         {
-          name: 'Patreon',
-          link: 'https://patreon.com/acollierr17',
+          name: 'GitHub',
+          link: 'https://github.com/suggestionsbot',
           external: true,
           fa: {
             active: true,
-            icon: 'fab fa-patreon'
+            icon: 'fab fa-github'
           }
         }
       ],
