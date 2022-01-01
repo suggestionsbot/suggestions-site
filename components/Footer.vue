@@ -15,7 +15,7 @@ export default {
     return {
       links: [
         {
-          name: '© 2021 Anthony Collier',
+          name: '© 2022 Anthony Collier',
           url: 'https://acollier.dev',
           external: true
         },
