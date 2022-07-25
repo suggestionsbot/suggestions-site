@@ -50,14 +50,6 @@ export default {
           }
         },
         {
-          name: 'Features',
-          link: '/features',
-          external: false,
-          fa: {
-            active: false
-          }
-        },
-        {
           name: 'Documentation',
           link: 'https://docs.suggestionsbot.com',
           external: true,
