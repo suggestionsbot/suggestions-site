@@ -16,13 +16,6 @@
             <p><strong>Add to Discord</strong></p>
           </n-link>
 
-          <n-link to="/features" class="button is-medium is-info">
-            <span class="icon is-medium">
-              <i class="fas fa-info-circle"></i>
-            </span>
-            <p>Learn More</p>
-          </n-link>
-
           <a :href=docCommands class="button is-medium is-success">
             <span class="icon is-medium">
               <i class="fas fa-file-alt"></i>
@@ -40,7 +33,7 @@ export default {
   name: 'Home',
   data () {
     return {
-      docCommands: 'https://docs.suggestionsbot.com/docs/commands.html',
+      docCommands: 'https://docs.suggestions.gg/docs/commands',
       images: {
         logo: require('../static/logo.png')
       }

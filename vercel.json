@@ -7,6 +7,10 @@
     {
       "source": "/invite",
       "destination": "https://suggestions.bot/invite"
+    },
+    {
+      "source": "/features",
+      "destination": "https://docs.suggestions.gg/coming-soon"
     }
   ]
 }
