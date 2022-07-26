@@ -78,8 +78,7 @@ module.exports = {
     'nuxt-sass-resources-loader',
     '@nuxtjs/style-resources',
     'nuxt-device-detect',
-    '@nuxtjs/dotenv',
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/dotenv'
   ],
   /*
    ** Axios module configuration
