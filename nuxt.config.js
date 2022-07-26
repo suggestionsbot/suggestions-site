@@ -66,7 +66,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['~/plugins/fathom.client.js'],
 
   /*
    ** Nuxt.js modules
@@ -87,11 +87,6 @@ module.exports = {
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
-  googleAnalytics: {
-    id: 'UA-135304839-1',
-    dev: false
-  },
-
   route: {
     mode: 'history'
   },
@@ -123,6 +118,11 @@ module.exports = {
           loader: 'eslint-loader',
           exclude: /(node_modules)/
         })
+      }
+
+      // Load Fathom Analytics in production
+      if (!ctx.isDev && ctx.isClient) {
+        config.plugins.push({ src: '~/plugins/fathom.client.js', ssr: false })
       }
     }
   }
