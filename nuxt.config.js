@@ -31,10 +31,10 @@ module.exports = {
       name: 'Suggestions',
       description: metaDefaults.description,
       theme_color: '#dd9323',
-      ogHost: process.env.NODE_ENV === 'production' ? 'https://suggestionsbot.com' : 'https://suggestionsdev.ngrok.io',
+      ogHost: process.env.NODE_ENV === 'production' ? 'https://suggestions.gg' : 'https://suggestionsdev.ngrok.io',
       twiterCard: 'summary_large_image',
-      twitterSite: '@suggestions_bot',
-      twitterCreator: '@suggestions_bot'
+      twitterSite: '@TeamSuggestions',
+      twitterCreator: '@TeamSuggestions'
     },
     manifest: {
       name: 'Suggestions',
@@ -66,7 +66,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/fathom.client.js'],
+  plugins: [],
 
   /*
    ** Nuxt.js modules
@@ -78,13 +78,24 @@ module.exports = {
     'nuxt-sass-resources-loader',
     '@nuxtjs/style-resources',
     'nuxt-device-detect',
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    '@lostdesign/nuxt-fathom'
   ],
+  router: {
+    middleware: ['fathom']
+  },
   /*
    ** Axios module configuration
    */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+  },
+  /**
+   * Fathom Analytics configuration
+   */
+  fathom: {
+    siteId: process.env.FATHOM_SITE_ID,
+    spa: 'history'
   },
   route: {
     mode: 'history'
@@ -117,11 +128,6 @@ module.exports = {
           loader: 'eslint-loader',
           exclude: /(node_modules)/
         })
-      }
-
-      // Load Fathom Analytics in production
-      if (!ctx.isDev && ctx.isClient) {
-        config.plugins.push({ src: '~/plugins/fathom.client.js', ssr: false })
       }
     }
   }
