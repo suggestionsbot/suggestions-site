@@ -14,10 +14,11 @@
     "precommit": "yarn lint"
   },
   "dependencies": {
+    "@lostdesign/nuxt-fathom": "^1.0.3",
     "@nuxtjs/bulma": "^1.2.4",
     "@nuxtjs/dotenv": "^1.3.0",
     "@nuxtjs/pwa": "^3.3.5",
-    "@ubclaunchpad/vue-fathom": "^2.0.0",
+    "fathom-client": "^3.5.0",
     "nuxt": "^2.8.1",
     "nuxt-device-detect": "^1.1.5"
   },
