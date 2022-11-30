@@ -11,6 +11,10 @@
     {
       "source": "/features",
       "destination": "https://docs.suggestions.gg/coming-soon"
+    },
+    {
+      "source": "/translate",
+      "destination": "https://forms.gle/BraSnFoAB1Lixpz2A"
     }
   ]
 }
