@@ -15,7 +15,7 @@ export default {
     return {
       links: [
         {
-          name: '© 2022 Anthony Collier',
+          name: `© ${new Date().getFullYear()} Anthony Collier`,
           url: 'https://acollier.dev',
           external: true
         },
