@@ -6,7 +6,7 @@
         <h2 class="subtitle">Last updated: February 23, 2019</h2>
 
         <p>Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the
-          <a href="https://suggestionsbot.com">https://suggestionsbot.com</a> website (the "Service") operated by
+          <a href="https://suggestionsbot.com">https://suggestions.gg</a> website (the "Service") operated by
           Suggestion's Bot ("us", "we", or
           "our").</p>
 
@@ -91,7 +91,7 @@ export default {
   name: 'Terms',
   data () {
     return {
-      contactLink: 'mailto:hello@suggestions.gg'
+      contactLink: 'mailto:hello@suggestions.gg?subject=Terms%20of%20Service'
     };
   },
   head () {
