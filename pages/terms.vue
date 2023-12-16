@@ -3,82 +3,37 @@
     <section class="section">
       <div class="container">
         <h1 class="title ">Terms of Service</h1>
-        <h2 class="subtitle">Last updated: February 23, 2019</h2>
+        <h2 class="subtitle">Last updated: December 16, 2023</h2>
 
-        <p>Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the
-          <a href="https://suggestionsbot.com">https://suggestions.gg</a> website (the "Service") operated by
-          Suggestion's Bot ("us", "we", or
-          "our").</p>
+        <p>Welcome to Suggestions! These Terms of Service (&quot;Terms&quot;) govern your use of the Suggestions Bot on Discord and our website located at <a href="https://suggestions.gg">https://suggestions.gg</a> (collectively, the &quot;Service&quot;), which are operated by Suggestions Bot (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;). By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of the terms, please do not use our Service.</p>
 
-        <p>Your access to and use of the Service is conditioned on your acceptance of and compliance with these
-          Terms. These Terms apply to all visitors, users and others who access or use the Service.</p>
+        <h2 class="subtitle is-4">1. Acceptance of Terms</h2>
+        <p>By using the Service, you agree to these Terms. If you are using the Service on behalf of an organization, you are agreeing to these Terms for that organization and promising that you have the authority to bind that organization to these terms.</p>
 
-        <p>By accessing or using the Service you agree to be bound by these Terms. If you disagree with any
-          part of the terms then you may not access the Service.</p>
+        <h2 class="subtitle is-4">2. Changes to Terms</h2>
+        <p>We reserve the right to modify or replace these Terms at any time at our sole discretion. We will strive to provide at least 30 days&#39; notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</p>
 
-        <h2 class="subtitle is-4">Links To Other Web Sites</h2>
+        <h2 class="subtitle is-4">3. Use of the Service</h2>
 
-        <p>Our Service may contain links to third-party web sites or services that are not owned or controlled
-          by Suggestion's Bot.</p>
+        <h3 class="subtitle is-5">3.1 Content Submission</h3>
+        <p>Users can upload content through the Suggestions Bot. However, such content is subject to Discord&#39;s Terms of Service and Community Guidelines. Users are solely responsible for the content they submit.</p>
 
-        <p>Suggestion's Bot has no control over, and assumes no responsibility for, the content, privacy
-          policies, or practices of any third party web sites or services. You further acknowledge and agree
-          that Suggestion's Bot shall not be responsible or liable, directly or indirectly, for any damage or
-          loss caused or alleged to be caused by or in connection with use of or reliance on any such
-          content, goods or services available on or through any such web sites or services.</p>
+        <h3 class="subtitle is-5">3.2 Intellectual Property</h3>
+        <p>The Service and its original content (excluding content provided by users), features, and functionality, including but not limited to the Suggestions Bot name, logo, and other branding elements, are and will remain the exclusive property of Suggestions Bot and its licensors.</p>
 
-        <p>We strongly advise you to read the terms and conditions and privacy policies of any third-party web
-          sites or services that you visit.</p>
+        <h2 class="subtitle is-4">4. User Feedback</h2>
+        <p>Any feedback, comments, ideas, improvements, or suggestions (collectively, &quot;Feedback&quot;) provided by you to us with respect to the Service shall remain the sole and exclusive property of Suggestions Bot. We shall be free to use, copy, modify, publish, or redistribute the Feedback for any purpose and in any way without any credit or any compensation to you.</p>
 
-        <h2 class="subtitle is-4">Termination</h2>
+        <h2 class="subtitle is-4">5. Privacy Policy</h2>
+        <p>Your use of the Service is also governed by our Privacy Policy, which is incorporated by reference into these Terms. Please read our Privacy Policy carefully for information relating to our collection, use, and disclosure of your personal information.</p>
 
-        <p>We may terminate or suspend access to our Service immediately, without prior notice or liability,
-          for any reason whatsoever, including without limitation if you breach the Terms.</p>
+        <h2 class="subtitle is-4">6. Limitation of Liability</h2>
+        <p>To the fullest extent permitted by applicable law, Suggestions Bot shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses, resulting from (a) your access to or use of or inability to access or use the Service; (b) any conduct or content of any third party on the Service.</p>
 
-        <p>All provisions of the Terms which by their nature should survive termination shall survive
-          termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity
-          and limitations of liability.</p>
+        <h2 class="subtitle is-4">7. Governing Law</h2>
+        <p>These Terms shall be governed and construed in accordance with the laws of the State of Ohio, United States, without regard to its conflict of law provisions.</p>
 
-        <p>We may terminate or suspend your account immediately, without prior notice or liability, for any
-          reason whatsoever, including without limitation if you breach the Terms.</p>
-
-        <p>Upon termination, your right to use the Service will immediately cease. If you wish to terminate
-          your account, you may simply discontinue using the Service.</p>
-
-        <p>All provisions of the Terms which by their nature should survive termination shall survive
-          termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity
-          and limitations of liability.</p>
-
-        <h2 class="subtitle is-4">Governing Law</h2>
-
-        <p>These Terms shall be governed and construed in accordance with the laws of Ohio, United States,
-          without regard to its conflict of law provisions.</p>
-
-        <p>Our failure to enforce any right or provision of these Terms will not be considered a waiver of
-          those rights. If any provision of these Terms is held to be invalid or unenforceable by a court,
-          the remaining provisions of these Terms will remain in effect. These Terms constitute the entire
-          agreement between us regarding our Service, and supersede and replace any prior agreements we might
-          have between us regarding the Service.</p>
-
-        <h2 class="subtitle is-4">Accuracy of materials</h2>
-
-        <p>The materials appearing on Suggestion's Bot's website could include technical, typographical, or
-          photographic errors. Suggestion's Bot does not warrant that any of the materials on its website
-          are accurate, complete or current. Suggestion's Bot may make changes to the materials contained
-          on its website at any time without notice. However Suggestion's Bot does not make any commitment
-          to update the materials.</p>
-
-        <h2 class="subtitle is-4">Changes</h2>
-
-        <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a
-          revision is material we will try to provide at least 30 days notice prior to any new terms taking
-          effect. What constitutes a material change will be determined at our sole discretion.</p>
-
-        <p>By continuing to access or use our Service after those revisions become effective, you agree to be
-          bound by the revised terms. If you do not agree to the new terms, please stop using the Service.</p>
-
-        <h2 class="subtitle is-4">Contact Us</h2>
-
+        <h2 class="subtitle is-4">8. Contact Us</h2>
         <p>If you have any questions about the Terms of Service, please <a :href=contactLink target="_blank">contact
           us</a>.</p>
       </div>
