@@ -12,6 +12,7 @@
         <h3 class="subtitle is-5">1.1 Data Provided by You</h3>
         <ul>
           <li><strong>Discord User ID</strong>: Collected when you interact with the Suggestions Bot.</li>
+          <li><strong>Command Execution Data</strong>: We collect the date, time, and your Discord User ID each time you execute a command with the Suggestions Bot.</li>
           <li><strong>Discord Guild ID and Channel ID</strong>: Collected from the Discord guilds and channels where the Suggestions Bot is used.</li>
           <li><strong>User-Submitted Content</strong>: Stored content that you submit through user-invoked commands, including text and image URLs.</li>
         </ul>
