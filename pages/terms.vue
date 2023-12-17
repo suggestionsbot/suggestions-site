@@ -36,6 +36,9 @@
         <h2 class="subtitle is-4">8. Contact Us</h2>
         <p>If you have any questions about the Terms of Service, please <a :href=contactLink target="_blank">contact
           us</a>.</p>
+
+        <p><em>AI Transparency</em><br>
+          This document has been produced partially using AI/GPT software. Please note that it has not been reviewed by legal counsel. We recommend consulting with a qualified legal professional for advice specific to your situation.</p>
       </div>
     </section>
   </div>
