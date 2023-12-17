@@ -5,7 +5,7 @@
         <h1 class="title ">Terms of Service</h1>
         <h2 class="subtitle">Last updated: December 16, 2023</h2>
 
-        <p>Welcome to Suggestions! These Terms of Service (&quot;Terms&quot;) govern your use of the Suggestions Bot on Discord and our website located at <a href="https://suggestions.gg">https://suggestions.gg</a> (collectively, the &quot;Service&quot;), which are operated by Suggestions Bot (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;). By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of the terms, please do not use our Service.</p>
+        <p>Welcome to Suggestions! These Terms of Service (&quot;Terms&quot;) govern your use of the Suggestions Bot (known on Discord as "Suggestions#2602" with the user ID "474051954998509571") and our website located at <a href="https://suggestions.gg">https://suggestions.gg</a> (collectively, the &quot;Service&quot;), which are operated by Suggestions Bot (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;). By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of the terms, please do not use our Service.</p>
 
         <h2 class="subtitle is-4">1. Acceptance of Terms</h2>
         <p>By using the Service, you agree to these Terms. If you are using the Service on behalf of an organization, you are agreeing to these Terms for that organization and promising that you have the authority to bind that organization to these terms.</p>
