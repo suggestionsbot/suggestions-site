@@ -3,98 +3,53 @@
     <section class="section">
       <div class="container">
         <h1 class="title">Privacy Policy</h1>
-        <h2 class="subtitle">Last updated: January 29, 2019</h2>
+        <h2 class="subtitle">Last updated: December 16, 2023</h2>
 
-        <p>This document entails the privacy policy and agreement that you accept when adding the <strong>Suggestions</strong>#2602
-          (474051954998509571) bot to a guild, or as a member of such a guild. This also includes the website
-          <a href="https://suggestionsbot.com">suggestionsbot.com</a> and all of its subdomains. This document does not
-          supersede the
-          <a href="https://discordapp.com/developers/docs/legal">Developer Terms of Service</a>.</p>
+        <p>Welcome to Suggestions! This Privacy Policy outlines how we, Suggestions Bot (known on Discord as "Suggestions#2602" with the user ID "474051954998509571"), collect, use, share, and protect the information about you in connection with our Discord bot and website located at <a href="https://suggestions.gg">https://suggestions.gg</a> (&quot;Service&quot;). By using the Service, you agree to the collection and use of information in accordance with this policy.</p>
 
-        <h2 class="subtitle is-4">Disclaimer</h2>
+        <h2 class="subtitle is-4">1. Information We Collect</h2>
 
-        <p>This document was inspired and forked from a publicly visible privacy policy by jagrosh. For the
-          original version, <a href="https://gist.github.com/jagrosh/f1df4441f94ca06274fa78db7cc3c526">click
-            here</a>.</p>
-
-        <h2 class="subtitle is-4">Terminology</h2>
-
+        <h3 class="subtitle is-5">1.1 Data Provided by You</h3>
         <ul>
-          <li><strong>Guild</strong> - Refers to a Discord guild or server.</li>
-          <li><strong>Guild Administrator</strong> - Anyone who has the ability to add a bot to a guild or
-            configure the bot for the guild. This is usually an administrator or moderator (or someone who
-            has the <code>MANAGE_GUILD</code> or <code>ADMINISTRATOR</code> permission)</li>
-          <li><strong>Guild Member</strong> - Anyone who is a member of the guild to which the Suggestions
-            bot has been added</li>
-          <li><strong>Service User</strong> - Anyone who authorizes an application (logs in) for a scope that
-            provides additional information</li>
+          <li><strong>Discord User ID</strong>: Collected when you interact with the Suggestions Bot.</li>
+          <li><strong>Command Execution Data</strong>: We collect the date, time, and your Discord User ID each time you execute a command with the Suggestions Bot.</li>
+          <li><strong>Discord Guild ID and Channel ID</strong>: Collected from the Discord guilds and channels where the Suggestions Bot is used.</li>
+          <li><strong>User-Submitted Content</strong>: Stored content that you submit through user-invoked commands, including text and image URLs.</li>
         </ul>
 
-        <h2 class="subtitle is-4">Data Collected By Command</h2>
-
-        <p>The following items are collected and stored when intentionally provided by a user (usually by means
-          of a command). This data will not be collected automatically. When providing data in this way, you
-          forego any rights to the content of the data provided.</p>
-
-        <p>The following items may be collected and stored when intentionally provided by a user (usually by
-          means of a command). This data will not be collected automatically. When providing data in this
-          way, you forego any rights to the content of the data provided.</p>
-
+        <h3 class="subtitle is-5">1.2 Analytics and Website Data</h3>
         <ul>
-          <li>Guild configurations (staff roles, suggestions channel, etc)</li>
-          <li>Suggestions, suggestion notes, suggestion approval/rejection messages, blacklist reasons</li>
-          <li>Data for command usage</li>
+          <li><strong>Fathom Analytics</strong>: Aggregate data such as visit frequency and page views is collected for website analytics. Personal information like IP addresses is stored securely and in compliance with Fathom Analytics&#39; privacy policies.</li>
+          <li><strong>Website Hosting</strong>: Our website is hosted on Vercel, and we adhere to their data protection and privacy policies.</li>
         </ul>
 
-        <h2 class="subtitle is-4">Data Collected Automatically</h2>
-
-        <p>This data is collected and used to provide statistics or history data. This data is necessary for
-          the functionality of the bot.</p>
+        <h2 class="subtitle is-4">2. Use of Information</h2>
         <ul>
-          <li>Guild Name</li>
-          <li>Guild ID</li>
-          <li>Guild Owner ID</li>
-          <li>Any data needed for standard operation of Discord bots, such as guild permissions (this data is
-            stored in cache only while the bot is running)</li>
+          <li>Provide, maintain, and improve the Suggestions Bot and website.</li>
+          <li>Respond to user requests and provide customer service.</li>
+          <li>Analyze and understand Service usage for improvement.</li>
         </ul>
 
-        <h2 class="subtitle is-4">Data Collected via Authorization</h2>
+        <h2 class="subtitle is-4">3. Sharing of Information</h2>
+        <p>We do not share personal information with third parties, except as required by law.</p>
 
-        <p>This data may be collected when authorizing an application, such as when logging in to a site via
-          Discord Oauth2. This data is also outlined on the authorization page.</p>
-        <ul>
-          <li>Username, Discord ID, Avatar Data</li>
-          <li>List of guilds your account is connected to</li>
-        </ul>
+        <h2 class="subtitle is-4">4. Data Retention and Access</h2>
+        <p>Information is retained as long as necessary to provide the Service. Users can request data removal via email or our official Discord support server (<a href="https://discord.gg/suggestions">https://discord.gg/suggestions</a>).</p>
 
-        <h2 class="subtitle is-4">Data Storage</h2>
+        <h2 class="subtitle is-4">5. Security</h2>
+        <p>We use secured and recommended procedures to protect user data and prevent unauthorized access, disclosure, alteration, and destruction.</p>
 
-        <p>All stored data is kept on protected servers. While storage methods vary, most data is kept within
-          password-protected databases such as <a href="https://www.mongodb.com">MongoDB</a>. Please keep in
-          mind that even with these protections, no data can ever be 100% secure. All efforts are taken to
-          keep your data secure and private, but its absolute security cannot be guaranteed.</p>
+        <h2 class="subtitle is-4">6. International Data Transfers</h2>
+        <p>Data transfers across international borders comply with the policies of services we use, such as Discord and Vercel.</p>
 
-        <h2 class="subtitle is-4">Feedback</h2>
+        <h2 class="subtitle is-4">7. Changes to This Privacy Policy</h2>
+        <p>We may update this policy and will notify users of any changes by posting the new Privacy Policy on this page.</p>
 
-        <p>Feedback on the Suggestion's Bot is appreciated. When you submit comments, suggestions, bug reports,
-          and any other forms of feedback, you forego any rights to the content, title, intent of the
-          provided feedback. Additionally, the feedback may be utilized in any way.</p>
+        <h2 class="subtitle is-4">8. Contact Us</h2>
+        <p>For questions about this Privacy Policy, please <a :href=contactLink target="_blank">contact us</a>.</p>
 
-        <h2 class="subtitle is-4">Agreement</h2>
-
-        <p>By adding the Suggestion's Bot to your guild or using its services in any way, you are consenting to
-          the policies outlined in this document. In addition, you (the guild administrator) are agreeing to
-          inform your members of the <a href="https://discordapp.com/developers/docs/legal">Developer Terms
-            of Service</a> and the contents of this document. If you, the guild administrator, do not agree
-          to this document, you may remove the bot from the guild. If you, the guild member, do not agree to
-          this document, you may leave the guild that contains the bot. If you, the service user, do not
-          agree to this document, you may revoke authorization of the application in your "Authorized
-          Apps" menu.</p>
-
-        <h2 class="subtitle is-4">Contact Us</h2>
-
-        <p>If you have any questions about the Privacy Policy, please <a :href=contactLink target="_blank">contact
-          us</a>.</p>
+        <p><em>AI Transparency</em><br>
+          This document has been produced partially using AI/GPT software. Please note that it has not been reviewed by legal counsel. We recommend consulting with a qualified legal professional for advice specific to your situation.</p>
       </div>
     </section>
   </div>
@@ -105,7 +60,7 @@ export default {
   name: 'Privacy',
   data () {
     return {
-      contactLink: 'mailto:hello@suggestions.gg'
+      contactLink: 'mailto:hello@suggestions.gg?subject=Privacy%20Policy'
     };
   },
   head () {
