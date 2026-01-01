@@ -15,8 +15,8 @@ export default {
     return {
       links: [
         {
-          name: `© ${new Date().getFullYear()} Anthony Collier`,
-          url: 'https://acollier.dev',
+          name: `© ${new Date().getFullYear()} Oof Software Limited`,
+          url: 'https://oof.co.nz',
           external: true
         },
         {

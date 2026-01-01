@@ -18,8 +18,8 @@
           have friends suggest new ideas in your new guild, this bot <em>will</em> and is <em>meant</em> to
           meet the needs of your Discord.</p>
 
-        <p>The developer, <strong>anthony#8577</strong>, is constantly updating the Suggestions bot and
-          actively communicates with his user base. He's listening to the ideas <em>you</em> have and
+        <p>The developer is constantly updating the Suggestions bot and
+          actively communicates with the user base. They are listening to the ideas <em>you</em> have and
           making the bot better all the time. So know you know more about the bot. But if you haven't
           invited it yet, what are you doing? Join us today!</p>
       </div>

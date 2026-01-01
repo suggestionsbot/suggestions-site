@@ -2,7 +2,7 @@
   "name": "website",
   "version": "4.9.1",
   "description": "The official website for the Suggestions bot.",
-  "author": "Anthony Collier <hello@acollier.dev>",
+  "author": "Ethan McKee-Harris <ethan@oof.co.nz>",
   "private": true,
   "scripts": {
     "dev": "nuxt dev",
