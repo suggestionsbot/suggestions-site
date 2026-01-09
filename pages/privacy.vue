@@ -19,7 +19,7 @@
 
         <h3 class="subtitle is-5">1.2 Analytics and Website Data</h3>
         <ul>
-          <li><strong>Fathom Analytics</strong>: Aggregate data such as visit frequency and page views is collected for website analytics. Personal information like IP addresses is stored securely and in compliance with Fathom Analytics&#39; privacy policies.</li>
+          <li><strong>Plausible Analytics</strong>: Aggregate data such as visit frequency and page views is collected for website analytics. Personal information is stored securely and in compliance with Plausible Analytics&#39; privacy policies.</li>
           <li><strong>Website Hosting</strong>: Our website is hosted on Vercel, and we adhere to their data protection and privacy policies.</li>
         </ul>
 

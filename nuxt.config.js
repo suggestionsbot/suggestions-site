@@ -79,23 +79,19 @@ module.exports = {
     '@nuxtjs/style-resources',
     'nuxt-device-detect',
     '@nuxtjs/dotenv',
-    '@lostdesign/nuxt-fathom'
+    'vue-plausible'
   ],
-  router: {
-    middleware: ['fathom']
+  plausible: {
+    domain: 'suggestions.gg',
+    apiHost: 'https://plausible.skelmis.co.nz',
+    enableAutoOutboundTracking: true,
+    trackLocalhost: false
   },
   /*
    ** Axios module configuration
    */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
-  },
-  /**
-   * Fathom Analytics configuration
-   */
-  fathom: {
-    siteId: process.env.FATHOM_SITE_ID,
-    spa: 'history'
   },
   route: {
     mode: 'history'
