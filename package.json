@@ -14,10 +14,11 @@
     "precommit": "yarn lint"
   },
   "dependencies": {
+    "@nuxt/components": "^2.2.1",
     "@nuxtjs/bulma": "^1.2.4",
-    "@nuxtjs/dotenv": "^1.3.0",
+    "@nuxtjs/dotenv": "^1.4.2",
     "@nuxtjs/pwa": "^3.3.5",
-    "nuxt": "^2.8.1",
+    "nuxt": "2.17.3",
     "nuxt-device-detect": "^1.1.5",
     "vue-plausible": "^1.3.2"
   },
@@ -38,7 +39,7 @@
     "nodemon": "^2.0.12",
     "nuxt-sass-resources-loader": "^2.0.5",
     "sass-loader": "^10",
-    "vue-style-loader": "^3.1.2",
-    "webpack": "^5.104.1"
-  }
+    "vue-style-loader": "^3.1.2"
+  },
+  "packageManager": "yarn@4.9.1"
 }
