@@ -1,5 +1,0 @@
-name = "suggestions-site"
-
-[vars]
-PYTHON_VERSION = "3.11"
-YARN_ENABLE_IMMUTABLE_INSTALLS = false
