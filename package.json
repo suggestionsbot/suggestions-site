@@ -2,7 +2,7 @@
   "name": "website",
   "version": "4.9.1",
   "description": "The official website for the Suggestions bot.",
-  "author": "Anthony Collier <hello@acollier.dev>",
+  "author": "Ethan McKee-Harris <ethan@oof.co.nz>",
   "private": true,
   "scripts": {
     "dev": "nuxt dev",
@@ -38,6 +38,7 @@
     "nodemon": "^2.0.12",
     "nuxt-sass-resources-loader": "^2.0.5",
     "sass-loader": "^10",
-    "vue-style-loader": "^3.1.2"
+    "vue-style-loader": "^3.1.2",
+    "webpack": "^5.104.1"
   }
 }
